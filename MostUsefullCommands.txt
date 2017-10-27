@@ -8,6 +8,7 @@ git init – initialize git repository
 git remote add origin *link do repo w sieci*
 git status – check the status of a git repository
 
+
 git add – Track files
 	. - all files
 git commit – commit tracked files
@@ -16,3 +17,10 @@ git commit – commit tracked files
 git push – upload files
 	origin master
 git pull – download files
+	origin master
+
+
+
+
+ssh *username@ssh.domain.com* - ssh into your host
+ssh exit - exit your ssh back to local enviroment
