@@ -1,0 +1,14 @@
+pwd - print working directory
+ls - list directories
+cd - change directories
+mkdir - make directory
+
+git config – configure git
+git init – initialize git repository
+git remote add origin *link do repo w sieci*
+git status – check the status of a git repository
+
+git add – Track files
+git commit – commit tracked files
+git push – upload files
+git pull – download files
