@@ -9,6 +9,10 @@ git remote add origin *link do repo w sieci*
 git status – check the status of a git repository
 
 git add – Track files
+	. - all files
 git commit – commit tracked files
+	-a - all files
+	-m - inluding a message, if you forget to add the command and end up in a strange screen - :q!
 git push – upload files
+	origin master
 git pull – download files
