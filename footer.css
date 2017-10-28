@@ -60,4 +60,9 @@ html, body {
   top: 50%;
   transform: translateX(-50%); }
 
-/*# sourceMappingURL=style.css.map */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projekty\/Programowanie\/Strony\%20internetowe\/Keprnicus\/footer\.scss}line{font-family:\000033}}
+footer {
+  margin-top: 200px;
+  background-color: #ffffff; }
+
+/*# sourceMappingURL=footer.css.map */

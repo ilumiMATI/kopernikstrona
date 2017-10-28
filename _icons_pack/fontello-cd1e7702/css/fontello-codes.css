@@ -1,0 +1,5 @@
+
+.icon-mail:before { content: '\e800'; } /* '' */
+.icon-mail-circled:before { content: '\e801'; } /* '' */
+.icon-phone-circled:before { content: '\e802'; } /* '' */
+.icon-facebook-circled:before { content: '\f051'; } /* '' */

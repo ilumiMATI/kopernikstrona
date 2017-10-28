@@ -60,4 +60,60 @@ html, body {
   top: 50%;
   transform: translateX(-50%); }
 
-/*# sourceMappingURL=style.css.map */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projekty\/Programowanie\/Strony\%20internetowe\/Keprnicus\/header\.scss}line{font-family:\000033}}
+header {
+  position: fixed;
+  width: 100%;
+  height: 55px;
+  background-color: #ffffff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projekty\/Programowanie\/Strony\%20internetowe\/Keprnicus\/header\.scss}line{font-family:\000039}}
+.header-button {
+  text-align: center;
+  min-width: 48px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projekty\/Programowanie\/Strony\%20internetowe\/Keprnicus\/header\.scss}line{font-family:\0000313}}
+.header-button > img {
+  display: inline-block;
+  width: 27px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projekty\/Programowanie\/Strony\%20internetowe\/Keprnicus\/header\.scss}line{font-family:\0000317}}
+.header-button > span {
+  display: block;
+  font-size: 14px;
+  font-weight: bold; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projekty\/Programowanie\/Strony\%20internetowe\/Keprnicus\/header\.scss}line{font-family:\0000322}}
+#button-menu {
+  left: 0px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projekty\/Programowanie\/Strony\%20internetowe\/Keprnicus\/header\.scss}line{font-family:\0000325}}
+#title-wrapper {
+  min-width: 224px;
+  height: 100%;
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projekty\/Programowanie\/Strony\%20internetowe\/Keprnicus\/header\.scss}line{font-family:\0000330}}
+#title-logo {
+  display: inline-block;
+  float: left;
+  width: 40px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projekty\/Programowanie\/Strony\%20internetowe\/Keprnicus\/header\.scss}line{font-family:\0000335}}
+#title-logo > img {
+  height: 40px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projekty\/Programowanie\/Strony\%20internetowe\/Keprnicus\/header\.scss}line{font-family:\0000338}}
+#title-text {
+  display: inline-block;
+  float: left;
+  width: 180px;
+  font-family: "Forum", cursive;
+  font-size: 22px;
+  font-weight: bold; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projekty\/Programowanie\/Strony\%20internetowe\/Keprnicus\/header\.scss}line{font-family:\0000346}}
+#button-apps {
+  right: 0px; }
+
+/*# sourceMappingURL=header.css.map */
