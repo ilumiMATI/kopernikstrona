@@ -21,8 +21,23 @@ html, body {
   font-family: $font-title;
   background-color: #303030;
 }
+/*
+.sticky-footer-frame { //body
+     display: table;
+     height: 100%;
+     width: 100%;
+}
+.sticky-footer-row { //header and footer
+     display: table-row;
+     height: 1px;
+}
+.sticky-footer-site-content { //main-wrapper
+     height: auto;
+}
+*/
 * { box-sizing: border-box; }
 .clear { clear:both; }
+
 .center-ab-both {
   position: absolute;
   top: 50%;
