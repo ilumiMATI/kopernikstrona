@@ -7,66 +7,105 @@ font-family: 'Forum', cursive;
 @import "https://fonts.googleapis.com/css?family=Forum|Hammersmith+One|Josefin+Sans|Quicksand";
 /* colors */
 /* sizes */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projekty\/GitHub\/kopernikstrona\/framework\.scss}line{font-family:\0000317}}
 html, body {
   width: 100%;
-  height: 100%;
+  height: calc(100% - 55px);
   font-family: "Forum", cursive;
   background-color: #303030; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projekty\/GitHub\/kopernikstrona\/framework\.scss}line{font-family:\0000323}}
 * {
   box-sizing: border-box; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projekty\/GitHub\/kopernikstrona\/framework\.scss}line{font-family:\0000324}}
 .clear {
   clear: both; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projekty\/GitHub\/kopernikstrona\/framework\.scss}line{font-family:\0000325}}
 .center-ab-both {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projekty\/GitHub\/kopernikstrona\/framework\.scss}line{font-family:\0000331}}
 .center-ab-vr {
   position: absolute;
   top: 50%;
   transform: translateY(-50%); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projekty\/GitHub\/kopernikstrona\/framework\.scss}line{font-family:\0000336}}
 .center-ab-hr {
   position: absolute;
   left: 50%;
   transform: translateX(-50%); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projekty\/GitHub\/kopernikstrona\/framework\.scss}line{font-family:\0000341}}
 .center-rl-both {
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projekty\/GitHub\/kopernikstrona\/framework\.scss}line{font-family:\0000347}}
 .center-rl-vr {
   position: relative;
   top: 50%;
   transform: translateY(-50%); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projekty\/GitHub\/kopernikstrona\/framework\.scss}line{font-family:\0000352}}
 .center-rl-hr {
   position: relative;
   top: 50%;
   transform: translateX(-50%); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projekty\/GitHub\/kopernikstrona\/footer\.scss}line{font-family:\000032}}
+.wrapper-pad-all-10 {
+  padding: 10px; }
+
+.wrapper-pad-vr-10 {
+  padding: 10px 0px; }
+
+.wrapper-pad-hr-10 {
+  padding: 0px 10px; }
+
+.wrapper-pad-all-20 {
+  padding: 20px; }
+
+.wrapper-pad-vr-20 {
+  padding: 20px 0px; }
+
+.wrapper-pad-hr-20 {
+  padding: 0px 20px; }
+
+.wrapper-pad-all-30 {
+  padding: 30px; }
+
+.wrapper-pad-vr-30 {
+  padding: 30px 0px; }
+
+.wrapper-pad-hr-30 {
+  padding: 0px 30px; }
+
 footer {
-  margin-top: 200px;
   background-color: #ffffff; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projekty\/GitHub\/kopernikstrona\/footer\.scss}line{font-family:\000036}}
-.siema {
-  background-color: #000; }
+footer section {
+  width: 50%;
+  min-height: 80px;
+  float: left;
+  text-align: center; }
+
+footer section h1 {
+  font-size: 20px;
+  font-weight: bold; }
+
+#mail {
+  width: 100%; }
+
+#lang h1 {
+  padding-bottom: 10px; }
+
+#lang img {
+  width: 35px; }
+
+#authors {
+  width: 100%; }
+
+#copyright {
+  padding: 5px;
+  font-size: 15px;
+  background-color: #d7d7d7; }
 
 /*# sourceMappingURL=footer.css.map */

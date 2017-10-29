@@ -78,57 +78,7 @@ html, body {
 .wrapper-pad-hr-30 {
   padding: 0px 30px; }
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 55px;
-  background-color: #ffffff;
-  box-shadow: 0 0 5px #b4b4b4; }
+#main-wrapper {
+  margin-top: 55px; }
 
-.header-button {
-  text-align: center;
-  min-width: 48px; }
-
-.header-button img {
-  position: relative;
-  top: 3px;
-  display: inline-block;
-  width: 40px; }
-
-.header-button span {
-  position: relative;
-  top: -5px;
-  display: block;
-  font-size: 14px;
-  font-weight: bold; }
-
-#button-menu {
-  left: 0px; }
-
-#title-wrapper {
-  min-width: 224px;
-  height: 100%;
-  text-align: center; }
-
-#title-logo {
-  display: inline-block;
-  float: left;
-  width: 40px; }
-
-#title-logo img {
-  height: 40px; }
-
-#title-text {
-  display: inline-block;
-  float: left;
-  width: 180px;
-  font-family: "Forum", cursive;
-  font-size: 22px;
-  font-weight: bold; }
-
-#button-apps {
-  right: 0px; }
-
-/*# sourceMappingURL=header.css.map */
+/*# sourceMappingURL=content.css.map */
