@@ -11,10 +11,14 @@ header {
     min-width: 48px;
   }
     .header-button > img {
+      position: relative;
+      top:3px;
       display: inline-block;
-      width: 27px;
+      width: 40px;
     }
     .header-button > span {
+      position: relative;
+      top: -5px;
       display: block;
       font-size: 14px;
       font-weight: bold;
