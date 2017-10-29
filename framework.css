@@ -60,13 +60,4 @@ html, body {
   top: 50%;
   transform: translateX(-50%); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projekty\/GitHub\/kopernikstrona\/footer\.scss}line{font-family:\000032}}
-footer {
-  margin-top: 200px;
-  background-color: #ffffff; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projekty\/GitHub\/kopernikstrona\/footer\.scss}line{font-family:\000036}}
-.siema {
-  background-color: #000; }
-
-/*# sourceMappingURL=footer.css.map */
+/*# sourceMappingURL=framework.css.map */
