@@ -8,15 +8,15 @@
       <!-- css -->
         <!-- cssNormalize MUST be at the top -->
         <link rel="stylesheet" href="cssNormalize.css">
-      <link rel="stylesheet" href="header.css">
       <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="header.css">
+      <link rel="stylesheet" href="content.css">
       <link rel="stylesheet" href="footer.css">
       <!-- scripts -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
 
   <body>
-
     <header>
       <div id="button-menu" class="header-button center-ab-vr">
         <img src="ico/menu.svg" alt="#">
@@ -40,39 +40,64 @@
     <div id="main-wrapper">
       <div id="main-container">
         <div class="sample_content">
-          <h1>siema</h1>
+          <h1 class="wrapper-pad-all-20" style="color: #fff; font-size: 30px;">Lorem ipsum dolor sit amet</h1>
+          <h1 class="wrapper-pad-all-20" style="color: #fff; padding-top: 0px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
         </div>
       </div>
     </div>
 
     <footer>
-      <div id="phone">
-        <img src="" alt="phone">
-        <span>Telefon</span>
-      </div>
-      <div id="mail">
-        <img src="" alt="mail">
-        <span>E-Mail</span>
-      </div>
-      <div id="facebook">
-        <img src="" alt="facebook">
-        <span>@IIILOKalisz</span>
-      </div>
-      <div id="lang">
-        <img src="" alt="english">
-        <img src="" alt="español">
-        <img src="" alt="français">
-      </div>
-      <div id="authors">
-        <h1>Autorzy</h1>
-        <p>Mikołaj Kaźmierczak</p>
-        <p>Mateusz Antczak</p>
-      </div>
-      <div id="copyright" class="siema">
-        <span>&copy 2017 Mikołaj Kaźmierczak & Mateusz Antczak</span>
+      <div class="wrapper-pad-all-10">
+        <section id="adress">
+          <div class="wrapper-pad-hr-10">
+            <h1>Adres</h1>
+            <p>ul. Kościuszki 10</p>
+            <p>62-800 Kalisz</p>
+          </div>
+        </section>
+        <section id="phone">
+          <div class="wrapper-pad-hr-10">
+            <h1>Telefon</h1>
+            <span>62 767 20 36</span>
+          </div>
+        </section>
+        <section id="mail">
+          <div class="wrapper-pad-vr-20">
+            <h1>E-Mail</h1>
+            <p>dyrekcja@kopernik.kalisz.pl</p>
+            <p>zspg1@um.kalisz.pl (do sekretariatu szkoły)</p>
+            <p>sekretariat@kopernik.kalisz.pl</p>
+            <p>kopernik@kopernik.kalisz.pl</p>
+            <p>ksiegowosc@kopernik.kalisz.pl</p>
+          </div>
+        </section>
+        <section id="facebook">
+          <div class="wrapper-pad-hr-10">
+            <h1>Facebook</h1>
+            <a href="https://www.facebook.com/IIILOKalisz/?fref=ts"><span>@IIILOKalisz</span></a>
+          </div>
+        </section>
+        <section id="lang">
+          <div class="wrapper-pad-hr-10">
+            <h1>Języki</h1>
+            <img src="ico/english.png" alt="english">
+            <img src="ico/spain.png" alt="español">
+            <img src="ico/france.png" alt="français">
+          </div>
+        </section>
+        <section id="authors">
+          <div class="wrapper-pad-vr-10">
+            <h1>Autorzy</h1>
+            <p>Mikołaj Kaźmierczak</p>
+            <p>Mateusz Antczak</p>
+          </div>
+        </section>
+        <div class="clear"></div>
       </div>
     </footer>
-
+    <div id="copyright">
+      <span>&copy 2017 Mikołaj Kaźmierczak i Mateusz Antczak</span>
+    </div>
   </body>
 
 </html>
