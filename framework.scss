@@ -12,12 +12,12 @@ $font-button-header: 'Quicksand', sans-serif;
 $white: #ffffff;
 
 /* sizes */
-$size-height-body: calc(100% - 55px);
-$size-height-header: 55px;
+$size-vr-body: calc(100% - 55px);
+$size-vr-header: 55px;
 
 html, body {
   width: 100%;
-  height: $size-height-body;
+  height: $size-vr-body;
   font-family: $font-title;
   background-color: #303030;
 }
