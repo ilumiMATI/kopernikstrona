@@ -1,4 +1,11 @@
-@import "../framework/variables.scss";
+@import "_utilities.scss";
 #main-wrapper {
   margin-top: 55px;
+}
+.column {
+  position: relative;
+  top: -10px;
+  width: 10%;
+  height: 10px;
+  float: left;
 }

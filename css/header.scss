@@ -1,4 +1,4 @@
-@import "../framework/variables.scss";
+@import "_utilities.scss";
 
 header {
   position: fixed;
@@ -6,7 +6,7 @@ header {
   left: 0;
   width: 100%;
   height: $sizeVrHeader;
-  background-color: $white;
+  background-color: $colorWhite;
   box-shadow: 0 0 5px #b4b4b4;
 }
   .header-button {

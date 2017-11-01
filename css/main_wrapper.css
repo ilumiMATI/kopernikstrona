@@ -1,7 +1,8 @@
 /* sizes */
 /* colors */
+/* fonts */
 @import "https://fonts.googleapis.com/css?family=Forum|Hammersmith+One|Josefin+Sans|Quicksand";
-/* fonts:
+/* google fonts:
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Quicksand', sans-serif;
 font-family: 'Hammersmith One', sans-serif;
@@ -9,5 +10,12 @@ font-family: 'Forum', cursive;
 */
 #main-wrapper {
   margin-top: 55px; }
+
+.column {
+  position: relative;
+  top: -10px;
+  width: 10%;
+  height: 10px;
+  float: left; }
 
 /*# sourceMappingURL=main_wrapper.css.map */

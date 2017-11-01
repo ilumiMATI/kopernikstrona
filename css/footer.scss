@@ -1,7 +1,7 @@
-@import "../framework/variables.scss";
+@import "_utilities.scss";
 footer {
   width: 100%;
-  background-color: $white;
+  background-color: $colorWhite;
 }
   footer section {
     width: 50%;
