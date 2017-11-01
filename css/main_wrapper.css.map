@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,WAAW;AAIX,YAAY;AAGJ,8FAAsF;AAC9F;;;;;EAKE;ACZF,aAAc;EACZ,UAAU,EAAE,IAAI",
+"sources": ["../framework/variables.scss","main_wrapper.scss"],
+"names": [],
+"file": "main_wrapper.css"
+}

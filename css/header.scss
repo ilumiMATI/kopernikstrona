@@ -1,11 +1,11 @@
-@import "framework.scss";
+@import "../framework/variables.scss";
 
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: $size-vr-header;
+  height: $sizeVrHeader;
   background-color: $white;
   box-shadow: 0 0 5px #b4b4b4;
 }
@@ -46,7 +46,7 @@ header {
       display: inline-block;
       float: left;
       width: 180px;
-      font-family: $font-title;
+      font-family: $fontTitle;
       font-size: 22px;
       font-weight: bold;
     }
