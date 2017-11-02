@@ -12,10 +12,8 @@ font-family: 'Forum', cursive;
   margin-top: 55px; }
 
 .column {
-  position: relative;
-  top: -10px;
   width: 10%;
-  height: 10px;
+  height: 500px;
   float: left; }
 
 /*# sourceMappingURL=main_wrapper.css.map */
