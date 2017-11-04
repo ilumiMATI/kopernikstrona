@@ -1,17 +1,48 @@
 /* sizes */
-  $sizeVrBody: calc(100% - 55px);
   $sizeVrHeader: 55px;
+  $sizeVrBody: calc(100% - #{$sizeVrHeader});
 
 /* colors */
+  $colorBackground: #303030;
   $colorWhite: #ffffff;
+  $colorShadow: #b4b4b4;
 
 /* fonts */
-  @import "https://fonts.googleapis.com/css?family=Forum|Hammersmith+One|Josefin+Sans|Quicksand";
-  /* google fonts:
-  font-family: 'Josefin Sans', sans-serif;
-  font-family: 'Quicksand', sans-serif;
-  font-family: 'Hammersmith One', sans-serif;
-  font-family: 'Forum', cursive;
-  */
-  $fontTitle: 'Forum', cursive;
+    /* font faces */
+    @font-face {
+      font-family: 'AvertaDemo';
+      src: url('../fonts/averta_demo.otf') format('otf');
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'AvertaDemoBold';
+      src: url('../fonts/averta_demo_bold.otf') format('otf');
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'HighTideBold';
+      src: url('../fonts/high_tide_bold.otf') format('otf');
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'ZonaProBold';
+      src: url('../fonts/zona_pro_bold.otf') format('otf');
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'ZonaProLight';
+      src: url('../fonts/zona_pro_light.otf') format('otf');
+      font-style: normal;
+    }
+
+    /* google fonts */
+    /*
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Hammersmith One', sans-serif;
+    font-family: 'Forum', cursive;
+    */
+    @import "https://fonts.googleapis.com/css?family=Forum|Hammersmith+One|Josefin+Sans|Quicksand";
+
+  $fontHeaderTitle: 'Forum', cursive;
   $fontButtonHeader: 'Quicksand', sans-serif;

@@ -1,23 +1,23 @@
 function StickyFooter() {
   // creating variables for storing needed sizes
   $sizeVrWin = $(window).height();
-  $sizeVrHeader = $("header").height();
-  $sizeVrMainWrapper = $("#main-wrapper").height();
-  $sizeVrFooter = $("footer").height();
+  $sizeVrHeader = $('header').height();
+  $sizeVrMainWrapper = $('#main-wrapper').height();
+  $sizeVrFooter = $('footer').height();
 
   // checking if the header + #main-wrapper + footer is smaller then the window
   // if that happens there there is a blank gap under the footer, we don't want that
   if(($sizeVrHeader + $sizeVrMainWrapper + $sizeVrFooter) < $sizeVrWin) {
     // moving footer to the bottom
-    $("footer").css({
-      "position":"fixed",
-      "bottom":"0px",
-      "left":"0px"
+    $('footer').css({
+      'position':'fixed',
+      'bottom':'0px',
+      'left':'0px'
     });
   } else {
     // bringing footer back to the normal flow
-    $("footer").css({
-      "position":"static"
+    $('footer').css({
+      'position':'static'
     });
   }
 }
@@ -27,7 +27,7 @@ $(function() {
   StickyFooter();
 
   // calling StickyFooter every time the window is resized
-  $(window).on("resize", function() {
+  $(window).on('resize', function() {
     StickyFooter();
   });
 });

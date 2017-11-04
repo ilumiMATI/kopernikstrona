@@ -1,4 +1,4 @@
-@import "_utilities.scss";
+@import '_utilities.scss';
 
 header {
   position: fixed;
@@ -7,7 +7,7 @@ header {
   width: 100%;
   height: $sizeVrHeader;
   background-color: $colorWhite;
-  box-shadow: 0 0 5px #b4b4b4;
+  box-shadow: 0 0 5px $colorShadow;
 }
   .header-button {
     display: inline-block;
@@ -66,7 +66,7 @@ header {
       height: $sizeVrHeader;
     }
       #title-text h1 {
-        font-family: $fontTitle;
+        font-family: $fontHeaderTitle;
         font-size: 22px;
       }
       @media only screen and (min-width: 545px) {

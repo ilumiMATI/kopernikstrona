@@ -1,9 +1,4 @@
-@import "_utilities.scss";
+@import '_utilities.scss';
 #main-wrapper {
-  margin-top: 55px;
-}
-.column {
-  width: 10%;
-  height: 500px;
-  float: left;
+  margin-top: $sizeVrHeader;
 }
