@@ -1,7 +1,30 @@
 /* sizes */
 /* colors */
+/* fonts */
+/* font faces */
 @import "https://fonts.googleapis.com/css?family=Forum|Hammersmith+One|Josefin+Sans|Quicksand";
-/* fonts:
+@font-face {
+  font-family: 'AvertaDemo';
+  src: url("../fonts/averta_demo.otf") format("otf");
+  font-style: normal; }
+@font-face {
+  font-family: 'AvertaDemoBold';
+  src: url("../fonts/averta_demo_bold.otf") format("otf");
+  font-style: normal; }
+@font-face {
+  font-family: 'HighTideBold';
+  src: url("../fonts/high_tide_bold.otf") format("otf");
+  font-style: normal; }
+@font-face {
+  font-family: 'ZonaProBold';
+  src: url("../fonts/zona_pro_bold.otf") format("otf");
+  font-style: normal; }
+@font-face {
+  font-family: 'ZonaProLight';
+  src: url("../fonts/zona_pro_light.otf") format("otf");
+  font-style: normal; }
+/* google fonts */
+/*
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Quicksand', sans-serif;
 font-family: 'Hammersmith One', sans-serif;
@@ -17,47 +40,65 @@ header {
   box-shadow: 0 0 5px #b4b4b4; }
 
 .header-button {
-  text-align: center;
-  min-width: 48px; }
+  display: inline-block;
+  position: absolute;
+  min-width: 50px;
+  height: 55px; }
 
 .header-button img {
-  position: relative;
-  top: 3px;
   display: inline-block;
   width: 40px; }
 
+@media only screen and (min-width: 545px) {
+  .header-button img {
+    width: 50px; } }
 .header-button span {
-  position: relative;
-  top: -5px;
-  display: block;
-  font-size: 14px;
+  display: none;
+  font-size: 20px;
   font-weight: bold; }
 
+@media only screen and (min-width: 545px) {
+  .header-button span {
+    display: inline-block; } }
 #button-menu {
   left: 0px; }
 
+#button-menu span {
+  top: calc(50% + 1px);
+  left: 50px; }
+
 #title-wrapper {
-  min-width: 224px;
-  height: 100%;
-  text-align: center; }
+  min-width: 205px;
+  height: 55px; }
 
 #title-logo {
   display: inline-block;
   float: left;
-  width: 40px; }
+  height: 55px; }
 
 #title-logo img {
-  height: 40px; }
+  width: 25px; }
 
+@media only screen and (min-width: 545px) {
+  #title-logo img {
+    width: 35px; } }
 #title-text {
   display: inline-block;
-  float: left;
-  width: 180px;
-  font-family: "Forum", cursive;
-  font-size: 22px;
-  font-weight: bold; }
+  float: right;
+  height: 55px; }
 
+#title-text h1 {
+  font-family: "Forum", cursive;
+  font-size: 22px; }
+
+@media only screen and (min-width: 545px) {
+  #title-text h1 {
+    padding-left: 10px;
+    font-size: 28px; } }
 #button-apps {
   right: 0px; }
+
+#button-apps span {
+  right: 50px; }
 
 /*# sourceMappingURL=header.css.map */

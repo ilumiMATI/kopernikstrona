@@ -1,32 +1,45 @@
-@import "../framework/variables.scss";
+@import '_utilities.scss';
 footer {
   width: 100%;
-  background-color: $white;
+  background-color: $colorWhite;
 }
-  footer section {
-    width: 50%;
-    min-height: 80px;
-    float: left;
-    text-align: center;
+  #footer-sections-container {
+    font-family: 'Josefin Sans', sans-serif;
+    color: $colorWhite;
+    background-color: #263a4e;
   }
-    footer section h1 {
-      font-size: 20px;
-      font-weight: bold;
+    footer section {
+      text-align: center;
+      font-size: 16px;
+      float: left;
     }
-    #mail {
-      width: 100%;
-    }
-    #lang h1 {
-      padding-bottom: 10px;
-    }
-    #lang img {
-      width: 35px;
-    }
-    #authors {
-      width: 100%;
-    }
-    #copyright {
-      padding: 5px;
-      font-size: 15px;
-      background-color: #d7d7d7;
-    }
+      .footer-section-title {
+        min-width: 125px;
+        padding-bottom: 10px;
+      }
+        .footer-section-title img {
+          margin-right: 5px;
+          width: 25px;
+        }
+        .footer-section-title h1 {
+          position: relative;
+          top: -5px;
+          display: inline-block;
+          font-size: 20px;
+          font-weight: bold;
+        }
+      #lang-icons {
+        margin: auto;
+      }
+        #lang-icons img {
+          display: inline;
+          width: 35px;
+        }
+        footer span {
+          display: block;
+        }
+  #copyright {
+    padding: 5px;
+    text-align: center;
+    background-color: $colorCopyright;
+  }

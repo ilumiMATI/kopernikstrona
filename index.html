@@ -1,3 +1,8 @@
+<!--
+Project: "Kopernik Site"
+Authors: Mikołaj Kaźmierczak and Mateusz Antczak
+-->
+
 <!DOCTYPE html>
 <html lang="pl">
   <head>
@@ -13,104 +18,116 @@
       <link rel="stylesheet" href="css/header.css">
       <link rel="stylesheet" href="css/main_wrapper.css">
       <link rel="stylesheet" href="css/footer.css">
-      <!-- scripts -->
+      <!-- head scripts -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
 
   <body>
     <header>
-      <div id="button-menu" class="header-button center-ab-vr">
-        <img src="ico/menu.svg" alt="#">
-        <span>Menu</span>
+      <div id="button-menu" class="header-button">
+        <img src="icons/menu.svg" alt="menu.svg" class="center-rl-both">
+        <span class="center-ab-vr">Menu</span>
       </div>
 
-      <div id="title-wrapper" class="center-ab-both">
+      <div id="title-wrapper" class="center-ab-hr">
         <div id="title-logo" class="center-rl-vr">
-          <img src="img/emblem.png" alt="#">
+          <img src="images/emblem_logo.png" alt="emblem.png" class="center-rl-vr">
         </div>
 
         <div id="title-text" class="center-rl-vr">
-          <h1>III Liceum Kopernik</h1>
+          <h1 class="center-rl-vr">III Liceum Kopernik</h1>
         </div>
 
         <div class="clear"></div>
       </div>
 
-      <div id="button-apps" class="header-button center-ab-vr">
-        <img src="ico/apps.svg" alt="#">
-        <span>Apps</span>
+      <div id="button-apps" class="header-button">
+        <span class="center-ab-vr">Apps</span>
+        <img src="icons/apps.svg" alt="apps.svg" class="center-rl-both">
       </div>
+
+      <!-- header scripts -->
+      <!-- ... -->
     </header>
 
     <div id="main-wrapper">
       <div id="main-container">
-        <div class="sample_content">
-          <h1 class="wrapper-pad-all-20" style="color: #fff; font-size: 30px;">Lorem ipsum dolor sit amet</h1>
-          <h1 class="wrapper-pad-all-20" style="color: #fff; padding-top: 0px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
-        </div>
       </div>
+
+      <!-- main-wrapper scripts -->
+      <!-- ... -->
     </div>
 
     <footer>
-      <div class="wrapper-pad-all-10">
-        <section id="adress">
-          <div class="wrapper-pad-hr-10">
+      <div class="sector-bar"></div>
+
+      <div id="footer-sections-container">
+        <section id="adress" class="width-20 pad-all-20">
+          <div class="footer-section-title">
+            <img src="icons/footer/adress.svg" alt="adress.svg">
             <h1>Adres</h1>
-            <p>ul. Kościuszki 10</p>
-            <p>62-800 Kalisz</p>
           </div>
+
+          <span>ul. Kościuszki 10</span>
+          <span>62-800 Kalisz</span>
         </section>
 
-        <section id="phone">
-          <div class="wrapper-pad-hr-10">
-            <h1>Telefon</h1>
-            <span>62 767 20 36</span>
+        <section id="contact" class="width-20 pad-all-20">
+          <div class="footer-section-title">
+            <img src="icons/footer/phone.svg" alt="phone.svg">
+            <h1>Kontakt</h1>
           </div>
+
+          <span>62 767 20 36</span>
+          <span>tel/fax 767 20 37</span>
+          <span>dyrekcja@kopernik.kalisz.pl</span>
+          <span>zspg1@um.kalisz.pl (sekretariat)</span>
+          <span>sekretariat@kopernik.kalisz.pl</span>
+          <span>kopernik@kopernik.kalisz.pl</span>
+          <span>ksiegowosc@kopernik.kalisz.pl</span>
         </section>
 
-        <section id="mail">
-          <div class="wrapper-pad-vr-20">
-            <h1>E-Mail</h1>
-            <p>dyrekcja@kopernik.kalisz.pl</p>
-            <p>zspg1@um.kalisz.pl (do sekretariatu szkoły)</p>
-            <p>sekretariat@kopernik.kalisz.pl</p>
-            <p>kopernik@kopernik.kalisz.pl</p>
-            <p>ksiegowosc@kopernik.kalisz.pl</p>
-          </div>
-        </section>
-
-        <section id="facebook">
-          <div class="wrapper-pad-hr-10">
+        <section id="facebook" class="width-20 pad-all-20">
+          <div class="footer-section-title">
+            <img src="icons/footer/facebook.svg" alt="facebook.svg">
             <h1>Facebook</h1>
-            <a href="https://www.facebook.com/IIILOKalisz/?fref=ts"><span>@IIILOKalisz</span></a>
+          </div>
+
+          <span>@IIILOKalisz</span>
+        </section>
+
+        <section id="lang" class="width-20 pad-all-20">
+          <div class="footer-section-title">
+            <img src="icons/footer/lang.svg" alt="lang.svg">
+            <h1>Język</h1>
+          </div>
+
+          <div id="lang-icons">
+            <img src="icons/english.png" alt="english.png" class="marg-all-5">
+            <img src="icons/france.png" alt="france.png" class="marg-all-5">
+            <img src="icons/spain.png" alt="spain.png" class="marg-all-5">
           </div>
         </section>
 
-        <section id="lang">
-          <div class="wrapper-pad-hr-10">
-            <h1>Języki</h1>
-            <img src="ico/english.png" alt="english">
-            <img src="ico/spain.png" alt="español">
-            <img src="ico/france.png" alt="français">
-          </div>
-        </section>
-
-        <section id="authors">
-          <div class="wrapper-pad-vr-10">
+        <section id="authors" class="width-20 pad-all-20">
+          <div class="footer-section-title">
+            <img src="icons/footer/authors-brain.svg" alt="authors-brain.svg">
             <h1>Autorzy</h1>
-            <p>Mikołaj Kaźmierczak</p>
-            <p>Mateusz Antczak</p>
           </div>
+
+          <span>Mikołaj Kaźmierczak</span>
+          <span>Mateusz Antczak</span>
         </section>
 
         <div class="clear"></div>
       </div>
 
       <div id="copyright">
-        <span>&copy 2017 Mikołaj Kaźmierczak i Mateusz Antczak</span>
+        <span>&copy 2017 Mikołaj Kaźmierczak i Mateusz Antczak. All rights reserved.</span>
+        <span>Footer icons made by Freepik, Pavel Kozlov and Alessio Atzeni from www.flaticon.com </span>
       </div>
 
-      <!-- scripts -->
+      <!-- footer scripts -->
       <script src="scripts_js/sticky_footer.js"></script>
     </footer>
   </body>

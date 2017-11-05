@@ -1,4 +1,4 @@
-@import "../framework/variables.scss";
+@import '_utilities.scss';
 #main-wrapper {
-  margin-top: 55px;
+  margin-top: $sizeVrHeader;
 }
