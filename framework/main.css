@@ -48,6 +48,25 @@ html, body {
   height: 10px;
   background-color: #ffffff; }
 
+/* links */
+a:link {
+  color: #3ec4d6; }
+
+a:visited {
+  color: #3ec4d6; }
+
+a:hover {
+  color: #77d9e7; }
+
+.link-non-styled:link {
+  color: inherit; }
+
+.link-non-styled:visited {
+  color: inherit; }
+
+.link-non-styled:hover {
+  color: inherit; }
+
 /* width */
 .width-10 {
   display: block;
@@ -308,4 +327,4 @@ html, body {
 .marg-hr-30 {
   margin: 0px 30px; }
 
-/*# sourceMappingURL=framework.css.map */
+/*# sourceMappingURL=main.css.map */

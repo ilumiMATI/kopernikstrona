@@ -3,10 +3,16 @@
   $sizeVrBody: calc(100% - #{$sizeVrHeader});
 
 /* colors */
-  $colorBackground: #303030;
   $colorWhite: #ffffff;
+  $colorBlack: #000000;
+  $colorBackground: #303030;
+
   $colorShadow: #b4b4b4;
-  $colorCopyright: #ededed;
+  $colorLink: #3ec4d6;
+  $colorLinkHover: #77d9e7;
+
+  $colorFooter: $colorBackground/*#263a4e*/;
+  $colorCopyright: /*$colorWhite*/#ededed;
 
 /* fonts */
     /* font faces */

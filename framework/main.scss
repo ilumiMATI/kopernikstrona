@@ -1,4 +1,4 @@
-@import '../css/_utilities.scss';
+@import '_utilities.scss';
 
 html, body {
   width: 100%;
@@ -15,6 +15,19 @@ html, body {
   height: 10px;
   background-color: $colorWhite;
 }
+
+/* links */
+a:link    { color: $colorLink; } // unvisited link
+a:visited { color: $colorLink; } // visited link
+a:hover   { color: $colorLinkHover } // user mouses over a link
+a:focus   {  } // user clicks on a link
+a:active  {  } // user has clicked a link
+
+.link-non-styled:link    { color: inherit; } // unvisited link
+.link-non-styled:visited { color: inherit; } // visited link
+.link-non-styled:hover   { color: inherit } // user mouses over a link
+.link-non-styled:focus   {  } // user clicks on a link
+.link-non-styled:active  {  } // user has clicked a link
 
 /* width */
 .width-10  { display: block; width: 100%; }
@@ -97,12 +110,15 @@ html, body {
 .pad-all-5  { padding: 5px;      }
 .pad-vr-5   { padding: 5px 0px;  }
 .pad-hr-5   { padding: 0px 5px;  }
+
 .pad-all-10 { padding: 10px;     }
 .pad-vr-10  { padding: 10px 0px; }
 .pad-hr-10  { padding: 0px 10px; }
+
 .pad-all-20 { padding: 20px;     }
 .pad-vr-20  { padding: 20px 0px; }
 .pad-hr-20  { padding: 0px 20px; }
+
 .pad-all-30 { padding: 30px;     }
 .pad-vr-30  { padding: 30px 0px; }
 .pad-hr-30  { padding: 0px 30px; }
@@ -111,12 +127,15 @@ html, body {
 .marg-all-5  { margin: 5px;      }
 .marg-vr-5   { margin: 5px 0px;  }
 .marg-hr-5   { margin: 0px 5px;  }
+
 .marg-all-10 { margin: 10px;     }
 .marg-vr-10  { margin: 10px 0px; }
 .marg-hr-10  { margin: 0px 10px; }
+
 .marg-all-20 { margin: 20px;     }
 .marg-vr-20  { margin: 20px 0px; }
 .marg-hr-20  { margin: 0px 20px; }
+
 .marg-all-30 { margin: 30px;     }
 .marg-vr-30  { margin: 30px 0px; }
 .marg-hr-30  { margin: 0px 30px; }

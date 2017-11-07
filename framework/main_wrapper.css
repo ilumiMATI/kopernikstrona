@@ -33,4 +33,7 @@ font-family: 'Forum', cursive;
 #main-wrapper {
   margin-top: 55px; }
 
+#main-container section {
+  min-height: 300px; }
+
 /*# sourceMappingURL=main_wrapper.css.map */
