@@ -9,127 +9,134 @@ Authors: Mikołaj Kaźmierczak and Mateusz Antczak
     <!-- meta -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- links -->
-      <!-- framework -->
+      <!-- css -->
         <!-- _css_normalize (MUST be at the top) -->
-        <link rel="stylesheet" href="framework\_css_normalize.css">
-      <link rel="stylesheet" href="framework/main.css">
-      <link rel="stylesheet" href="framework/header.css">
-      <link rel="stylesheet" href="framework/main_wrapper.css">
-      <link rel="stylesheet" href="framework/footer.css">
-      <!-- head scripts -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="framework/_css_normalize.css">
+
+        <!-- framework -->
+        <link rel="stylesheet" href="framework/_framework.css">
+
+    <!-- head scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
 
   <body>
     <header>
-      <div id="button-menu" class="header-button">
-        <img src="icons/menu.svg" alt="menu.svg" class="center-rl-both">
-        <span class="center-ab-vr">Menu</span>
-      </div>
-
-      <a href="index.html" rel="home" class="link-non-styled">
-        <div id="title-wrapper" class="center-ab-hr">
-          <div id="title-logo" class="center-rl-vr">
-            <img src="images/emblem_logo.png" alt="emblem.png" class="center-rl-vr">
-          </div>
-
-          <div id="title-text" class="center-rl-vr">
-            <h1 class="center-rl-vr">III Liceum Kopernik</h1>
-          </div>
-
-          <div class="clear"></div>
+      <a href="#" class="a--non-styled">
+        <div id="header__button-menu" class="header__button">
+          <img src="icons/menu.svg" alt="menu.svg">
+          <span>Menu</span>
         </div>
       </a>
 
-      <div id="button-apps" class="header-button">
-        <span class="center-ab-vr">Apps</span>
-        <img src="icons/apps.svg" alt="apps.svg" class="center-rl-both">
-      </div>
+      <a href="index.html" class="a--non-styled">
+        <div id="header__title-wrapper">
+          <img src="icons/emblem_logo.png" alt="emblem.png">
+          <h1>III Liceum Kopernik</h1>
+        </div>
+      </a>
 
+      <a href="#" class="a--non-styled">
+        <div id="header__button-quick-menu" class="header__button">
+          <span>Szybkie</span>
+          <img src="icons/quick.svg" alt="quick.svg">
+        </div>
+      </a>
       <!-- header scripts -->
       <!-- ... -->
     </header>
 
-    <div id="main-wrapper">
-      <div id="main-container">
-        <section id="main-section-kopernik" class="" style="background-color: #c92929">
-          <div class="sector-bar"></div>
-        </section>
+    <main>
+      <div id="main-wrapper">
+        <section id="main__section__articles">
+          <h1 class="section__title">Artykuły</h1>
+          <div id="section__articles-wrapper">
+            <article>
+              <img src="images/sample1.jpg" alt="">
+              <h1>Nowy pomnik szkoły</h1>
+              <div class="article__data">
+                Poniedziałek, Marzec 3, 2017
+              </div>
+              <p>Nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit...</p>
+            </article>
 
-        <section id="main-section-why-kopernik" class="" style="background-color: #64b134">
-          <div class="sector-bar"></div>
-        </section>
-
-        <section id="main-section-rekrutacja" class="" style="background-color: #2a5f9d">
-          <div class="sector-bar"></div>
-        </section>
-
-        <section id="main-section-articles" class="" style="background-color: #5e477c">
-          <div class="sector-bar"></div>
-        </section>
-
-        <section id="main-section-projects" class="" style="background-color: #60bbab">
-          <div class="sector-bar"></div>
-        </section>
-
-        <section id="main-section-gallery" class="" style="background-color: #daeb52">
-          <div class="sector-bar"></div>
+            <article>
+              <img src="images/sample2.jpg" alt="">
+              <h1>Bal się odbył</h1>
+              <div class="article__data">
+                Sobota, Październik 25, 2017
+              </div>
+              <p>Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+            </article>
+          </div>
+          <a href="#" class="a--non-styled">
+            <div class="button button--main-section">
+                <span>Pokaż więcej...</span>
+            </div>
+          </a>
         </section>
       </div>
 
       <!-- main-wrapper scripts -->
       <!-- ... -->
-    </div>
+    </main>
 
     <footer>
-      <div class="sector-bar"></div>
-
-      <div id="footer-sections-container">
-        <section id="adress" class="width-20 pad-vr-30">
-          <div class="footer-section-title">
+      <div id="footer-wrapper">
+        <section>
+          <div class="section__title">
             <img src="icons/footer/adress.svg" alt="adress.svg">
             <h1>Adres</h1>
           </div>
 
-          <span>ul. Kościuszki 10</span>
-          <span>62-800 Kalisz</span>
+          <div class="section__text">
+            <span>ul. Kościuszki 10</span>
+            <span>62-800 Kalisz</span>
+          </div>
         </section>
 
-        <section id="contact" class="width-20 pad-vr-30">
-          <div class="footer-section-title">
+        <section>
+          <div class="section__title">
             <img src="icons/footer/phone.svg" alt="phone.svg">
             <h1>Kontakt</h1>
           </div>
 
-          <span>62 767 20 36</span>
-          <span>767 20 37 (tel/fax)</span>
+          <div class="section__text">
+            <span>62 767 20 36</span>
+            <span>767 20 37 (tel/fax)</span>
+          </div>
         </section>
 
-        <section id="mail" class="width-20 pad-vr-30">
-          <div class="footer-section-title">
+        <section>
+          <div class="section__title">
             <img src="icons/footer/mail_letter.svg" alt="mail_letter.svg">
             <h1>e-mail</h1>
           </div>
 
-          <span>dyrekcja@kopernik.kalisz.pl</span>
-          <span>zspg1@um.kalisz.pl (sekretariat)</span>
-          <span>sekretariat@kopernik.kalisz.pl</span>
-          <span>kopernik@kopernik.kalisz.pl</span>
-          <span>ksiegowosc@kopernik.kalisz.pl</span>
+          <div class="section__text">
+            <span>dyrekcja@kopernik.kalisz.pl</span>
+            <span>zspg1@um.kalisz.pl (sekretariat)</span>
+            <span>sekretariat@kopernik.kalisz.pl</span>
+            <span>kopernik@kopernik.kalisz.pl</span>
+            <span>ksiegowosc@kopernik.kalisz.pl</span>
+          </div>
         </section>
 
-        <section id="facebook" class="width-20 pad-vr-30">
-          <div class="footer-section-title">
+        <section>
+          <div class="section__title">
             <img src="icons/footer/facebook.svg" alt="facebook.svg">
             <h1>Facebook</h1>
           </div>
 
-          <a href="https://www.facebook.com/IIILOKalisz"><span>@IIILOKalisz</span></a>
+          <div class="section__text">
+            <a href="https://www.facebook.com/IIILOKalisz"><span>@IIILOKalisz</span></a>
+          </div>
         </section>
 
-        <section id="lang" class="width-20 pad-vr-30">
-          <div class="footer-section-title">
+        <section>
+          <div class="section__title">
             <img src="icons/footer/lang.svg" alt="lang.svg">
             <h1>Język</h1>
           </div>
@@ -146,7 +153,7 @@ Authors: Mikołaj Kaźmierczak and Mateusz Antczak
       </div>
 
       <div id="copyright">
-        <span>&copy 2017 Mikołaj Kaźmierczak i Mateusz Antczak. All rights reserved.</span>
+        <span>© 2017 Mikołaj Kaźmierczak i Mateusz Antczak. All rights reserved.</span>
         <span>Footer icons made by Freepik, Pavel Kozlov and Alessio Atzeni from www.flaticon.com </span>
       </div>
 

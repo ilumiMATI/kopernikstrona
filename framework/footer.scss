@@ -1,45 +1,53 @@
-@import '_utilities.scss';
 footer {
   width: 100%;
-  background-color: $colorWhite;
 }
-  #footer-sections-container {
+  #footer-wrapper {
     font-family: 'Josefin Sans', sans-serif;
     color: $colorWhite;
     background-color: $colorBackground;
-  }
-    footer section {
-      text-align: center;
-      font-size: 16px;
-      float: left;
+      section {
+        @include width(20);
+        float: left;
+        padding: 25px 0px;
+        text-align: center;
+        font-size: 16px;
+        float: left;
+      }
+        .section__title {
+          min-width: 125px;
+          padding-bottom: 10px;
+            img {
+              margin-right: 5px;
+              width: 25px;
+            }
+            h1 {
+              position: relative;
+              top: -5px;
+              display: inline-block;
+              font-size: 20px;
+              font-weight: bold;
+            }
+        }
+
+        .section__text {
+            span {
+              display: block;
+            }
+        }
+
+        #lang-icons {
+          margin: auto;
+          padding: 0px 20px;
+            img {
+              margin: 5px;
+              display: inline;
+              width: 35px;
+            }
+        }
     }
-      .footer-section-title {
-        min-width: 125px;
-        padding-bottom: 10px;
-      }
-        .footer-section-title img {
-          margin-right: 5px;
-          width: 25px;
-        }
-        .footer-section-title h1 {
-          position: relative;
-          top: -5px;
-          display: inline-block;
-          font-size: 20px;
-          font-weight: bold;
-        }
-      #lang-icons {
-        margin: auto;
-      }
-        #lang-icons img {
-          display: inline;
-          width: 35px;
-        }
-        footer span {
-          display: block;
-        }
   #copyright {
     padding: 5px;
+    font-size: 14px;
     text-align: center;
     background-color: $colorCopyright;
   }

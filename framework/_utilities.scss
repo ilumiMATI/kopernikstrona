@@ -7,9 +7,21 @@
   $colorBlack: #000000;
   $colorBackground: #303030;
 
-  $colorShadow: #b4b4b4;
+  $colorShadow: rgba(0,0,0,0.25);
   $colorLink: #3ec4d6;
   $colorLinkHover: #77d9e7;
+
+  $colorSection1: #7cdbd5;
+  $colorSection2: #f53240;
+  $colorSection3: #f9be02;
+  $colorSection4: #02c8a7;
+  $colorSection5: #8fc33a;
+  /* other worth trying:
+  (#4d505b #cf4858 #16a79d #80628b #f4ac42)
+  (#ffffff #ff606e #00ddd8 #517398 #262c3a)
+  (#d79922 #efe2ba #f13c20 #4056a1 #c5cbe3)
+  (#6ed3cf #9068be #e1e8f0 #e62739)
+  */
 
   $colorFooter: $colorBackground/*#263a4e*/;
   $colorCopyright: /*$colorWhite*/#ededed;
@@ -18,27 +30,17 @@
     /* font faces */
     @font-face {
       font-family: 'AvertaDemo';
-      src: url('../fonts/averta_demo.otf') format('otf');
-      font-style: normal;
-    }
-    @font-face {
-      font-family: 'AvertaDemoBold';
-      src: url('../fonts/averta_demo_bold.otf') format('otf');
-      font-style: normal;
-    }
-    @font-face {
-      font-family: 'HighTideBold';
-      src: url('../fonts/high_tide_bold.otf') format('otf');
+      src: url('../fonts/averta_demo.otf');
       font-style: normal;
     }
     @font-face {
       font-family: 'ZonaProBold';
-      src: url('../fonts/zona_pro_bold.otf') format('otf');
+      src: url('../fonts/zona_pro_bold.otf');
       font-style: normal;
     }
     @font-face {
       font-family: 'ZonaProLight';
-      src: url('../fonts/zona_pro_light.otf') format('otf');
+      src: url('../fonts/zona_pro_light.otf');
       font-style: normal;
     }
 
@@ -48,8 +50,16 @@
     font-family: 'Quicksand', sans-serif;
     font-family: 'Hammersmith One', sans-serif;
     font-family: 'Forum', cursive;
+
+    font-family: 'Lora', serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Libre Baskerville', serif;
     */
-    @import "https://fonts.googleapis.com/css?family=Forum|Hammersmith+One|Josefin+Sans|Quicksand";
+    @import "https://fonts.googleapis.com/css?family=Forum|Hammersmith+One|Josefin+Sans|Quicksand|EB+Garamond|Libre+Baskerville|Lora|Playfair+Display";
 
   $fontHeaderTitle: 'Forum', cursive;
   $fontButtonHeader: 'Quicksand', sans-serif;
+
+/* shadows */
+  $shadowLite: 0 0 5px $colorShadow;

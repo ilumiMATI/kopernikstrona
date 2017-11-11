@@ -2,7 +2,7 @@ function StickyFooter() {
   // creating variables for storing needed sizes
   $sizeVrWin = $(window).height();
   $sizeVrHeader = $('header').height();
-  $sizeVrMainWrapper = $('#main-wrapper').height();
+  $sizeVrMainWrapper = $('main').height();
   $sizeVrFooter = $('footer').height();
 
   // checking if the header + #main-wrapper + footer is smaller then the window
@@ -11,8 +11,8 @@ function StickyFooter() {
     // moving footer to the bottom
     $('footer').css({
       'position':'fixed',
-      'bottom':'0px',
-      'left':'0px'
+      'bottom':'0',
+      'left':'0'
     });
   } else {
     // bringing footer back to the normal flow

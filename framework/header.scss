@@ -1,6 +1,6 @@
-@import '_utilities.scss';
-
 header {
+  display: flex;
+  justify-content: space-between;
   position: fixed;
   z-index: 100;
   top: 0;
@@ -8,78 +8,42 @@ header {
   width: 100%;
   height: $sizeVrHeader;
   background-color: $colorWhite;
-  box-shadow: 0 0 5px $colorShadow;
+  box-shadow: $shadowLite;
 }
-  .header-button {
-    display: inline-block;
-    position: absolute;
-    min-width: 50px;
+  .header__button {
+    display: flex;
+    align-items: center;
+    z-index: 1;
     height: $sizeVrHeader;
-  }
-    .header-button img {
-      display: inline-block;
-      width: 40px;
-    }
-    @media only screen and (min-width: 545px) {
-      .header-button img {
-        width: 50px;
-      }
-    }
-    .header-button span {
-      display: none;
-      font-size: 20px;
-      font-weight: bold;
-    }
-    @media only screen and (min-width: 545px) {
-      .header-button span {
-        display: inline-block;
-      }
-    }
-
-  #button-menu {
-    left: 0px;
-  }
-    #button-menu span {
-      top: calc(50% + 1px);
-      left: 50px;
-    }
-
-  #title-wrapper {
-    min-width: 205px;
-    height: $sizeVrHeader;
-  }
-    #title-logo {
-      display: inline-block;
-      float: left;
-      height: $sizeVrHeader;
-    }
-      #title-logo img {
-        width: 25px;
+      img {
+        margin: 0px 10px;
+        height: 25px;
       }
       @media only screen and (min-width: 545px) {
-        #title-logo img {
-          width: 35px;
-        }
+        img { height: 30px; }
       }
-    #title-text {
-      display: inline-block;
-      float: right;
-      height: $sizeVrHeader;
-    }
-      #title-text h1 {
-        font-family: $fontHeaderTitle;
-        font-size: 22px;
+      span {
+        display: none;
+        font-size: 20px;
+        font-weight: bold;
       }
       @media only screen and (min-width: 545px) {
-        #title-text h1 {
-          padding-left: 10px;
-          font-size: 28px;
-        }
+        span { display: block; }
       }
-
-  #button-apps {
-    right: 0px;
   }
-    #button-apps span {
-      right: 50px;
-    }
+
+  #header__title-wrapper {
+    display: flex;
+    align-items: center;
+    height: $sizeVrHeader;
+      img {
+        margin-right: 10px;
+        height: 40px;
+      }
+      h1 {
+        font-size: 21px;
+      }
+      @media only screen and (min-width: 545px) {
+        h1 { font-size: 28px; }
+      }
+  }

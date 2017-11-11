@@ -1,0 +1,65 @@
+html, body {
+  width: 100%;
+  height: $sizeVrBody;
+  font-family: $fontHeaderTitle;
+  background-color: $colorBackground;
+}
+
+* { box-sizing: border-box; }
+.clear { clear:both; }
+
+/* links */
+a {
+  // link - unvisited link
+  // visited - visited link
+  // hover - user mouses over a link
+  // focus - user clicks on a link
+  // active - user has clicked a link
+  &:link    { color: $colorLink; }
+  &:visited { color: $colorLink; }
+  &:hover   { color: $colorLinkHover }
+  &:focus   {  }
+  &:active  {  }
+  &.a--non-styled:link    { text-decoration: none; color: inherit; }
+  &.a--non-styled:visited { text-decoration: none; color: inherit; }
+  &.a--non-styled:hover   { text-decoration: none; color: inherit; }
+  &.a--non-styled:focus   {  }
+  &.a--non-styled:active  {  }
+}
+
+/* sector bar */
+.sector-bar {
+  width: 100%;
+  height: 10px;
+  background-color: $colorWhite;
+}
+
+/* button */
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 150px;
+  height: 50px;
+  border: 5px solid $colorWhite;
+  border-radius: 25px;
+  box-shadow: $shadowLite;
+  transition: background-color 0.25s;
+    span {
+      color: $colorWhite;
+      font-size: 23px;
+      font-weight: bold;
+      text-align: center;
+      transition: color 0.25s;
+    }
+}
+.button:hover {
+  background-color: $colorWhite;
+    span {
+      color: $colorBlack;
+    }
+}
+  .button--main-section {
+    width: 250px;
+  }

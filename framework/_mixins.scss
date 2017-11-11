@@ -1,0 +1,25 @@
+/* width */
+@mixin width($percent) {
+  width: 100%;
+    @media (min-width: 750px) { width: percentage($percent / 100); }
+}
+
+/* center */
+@mixin center($type, $directions) {
+  @if $type == 'ab' { position: absolute; }
+  @else if $type == 'rl' { position: relative; }
+
+  @if $directions == 'both' {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @else if $directions == 'vr' {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @else if $directions == 'hr' {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
