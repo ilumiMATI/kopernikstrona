@@ -14,31 +14,44 @@ main {
             .section__title { font-size: 55px; }
           }
       }
-      #main__section__articles { background-color: $colorSection2; }
-        #section__articles-wrapper {
+      #main__section-articles { background-color: $colorSection2; }
+      #main__section-projects { background-color: $colorSection5; }
+        .section__content {
           display: flex;
+          flex-wrap: wrap;
+          align-items: flex-start;
           justify-content: space-evenly;
-          align-items: baseline;
-          margin: 30px auto;
+          margin: 40px auto;
           @include width(70);
-            article {
+        }
+        #section__content-articles {
+          margin: 40px auto 25px auto;
+            a {
               width: 45%;
-              background-color: $colorWhite;
-              box-shadow: $shadowLite;
-                img {
-                  width: 100%;
+                article {
+                  margin-bottom: 20px;
+                  background-color: $colorWhite;
+                  box-shadow: $shadowLite;
+                    img {
+                      width: 100%;
+                    }
+                    h1 {
+                      padding: 10px 10px 0px 10px;
+                      color: $colorBlack;
+                      font-size: 25px;
+                      font-weight: bold;
+                      text-align: center;
+                    }
+                    p {
+                      padding: 20px;
+                      color: $colorBlack;
+                      font-size: 18px;
+                    }
                 }
-                h1 {
-                  padding: 10px 10px 0px 10px;
-                  color: $colorBlack;
-                  font-size: 25px;
-                  font-weight: bold;
-                  text-align: center;
-                }
-                p {
-                  padding: 10px;
-                  color: $colorBlack;
-                  font-size: 18px;
+                article:hover {
+                    h1 {
+                      text-decoration: underline;
+                    }
                 }
             }
               .article__data {
@@ -46,6 +59,29 @@ main {
                 color: $colorBackground;
                 font-size: 15px;
                 text-align: center;
+              }
+        }
+        #section__content-projects {
+          justify-content: center;
+            a {
+                .content-projects__tile {
+                  margin: 5px;
+                  width: 100px;
+                  height: 100px;
+                  background-color: $colorWhite;
+                  border-radius: 50%;
+                    img {
+                      padding: 10px;
+                      width: 100%;
+                      border-radius: 50%;
+                    }
+                }
+                @media only screen and (min-width: 545px) {
+                  .content-projects__tile {
+                    width: 130px;
+                    height: 130px;
+                  }
+                }
               }
         }
   }
