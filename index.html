@@ -23,243 +23,209 @@ Authors: Mikołaj Kaźmierczak and Mateusz Antczak
   </head>
 
   <body>
-    <header>
-      <a href="#" class="a--non-styled">
-        <div id="header__button-menu" class="header__button">
-          <img src="icons/menu.svg" alt="menu.svg">
-          <span>Menu</span>
-        </div>
+    <header class="c-header">
+      <a class="c-header__button a--non-styled" href="#">
+        <img class="c-header__img" src="icons/header/menu.svg" alt="menu.svg">
+        <span class="c-header__text c-header__text--margin-right">Menu</span>
       </a>
 
-      <a href="index.html" class="a--non-styled">
-        <div id="header__title-wrapper">
-          <img src="icons/emblem_logo.png" alt="emblem.png">
-          <h1>III Liceum Kopernik</h1>
-        </div>
+      <a class="c-header__wrapper-title a--non-styled" href="index.html">
+        <img class="c-header__emblem" src="icons/header/emblem_logo.png" alt="emblem.png">
+        <h1 class="c-header__title">III Liceum Kopernik</h1>
       </a>
 
-      <a href="#" class="a--non-styled">
-        <div id="header__button-quick-menu" class="header__button">
-          <span>Szybkie</span>
-          <img src="icons/quick.svg" alt="quick.svg">
-        </div>
+      <a class="c-header__button a--non-styled" href="#">
+        <span class="c-header__text c-header__text--margin-left">Szybkie</span>
+        <img class="c-header__img" src="icons/header/quick.svg" alt="quick.svg">
       </a>
+
       <!-- header scripts -->
-      <!-- ... -->
+      <!-- coming soon -->
     </header>
 
-    <main>
-      <div id="main-wrapper">
-        <section id="main__section-articles">
-          <h1 class="section__title">Artykuły</h1>
-          <div id="section__content-articles" class="section__content">
-            <a href="#" class="a--non-styled">
-              <article>
-                <img src="images/sample1.jpg" alt="">
-                <h1>Nowy pomnik szkoły</h1>
-                <div class="article__data">
-                  Poniedziałek, Marzec 3, 2017
+    <main class="c-main">
+      <div class="c-main__wrapper-main">
+        <section class="o-section o-section--main o-section--articles">
+          <h1 class="o-section__title o-section__title--main">Artykuły</h1>
+          <div class="o-section__tiles o-section__tiles--articles">
+            <a class="o-tile o-tile--article a--non-styled" href="#">
+                <img class="o-tile__img" src="images/sample1.jpg" alt="">
+                <div class="o-tile__wrapper-text">
+                  <h1 class="o-tile__title">Nowy pomnik szkoły</h1>
+                  <h2 class="o-tile__date"><img src="icons/date.svg" alt="">Poniedziałek, Marzec 3, 2017</h2>
+                  <p class="o-tile__text">Nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit...</p>
                 </div>
-                <p>Nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit...</p>
-              </article>
             </a>
 
-            <a href="#" class="a--non-styled">
-              <article>
-                <img src="images/sample2.jpg" alt="">
-                <h1>Bal się odbył</h1>
-                <div class="article__data">
-                  Sobota, Październik 25, 2017
+            <a class="o-tile o-tile--article a--non-styled" href="#">
+                <img class="o-tile__img" src="images/sample2.jpg" alt="">
+                <div class="o-tile__wrapper-text">
+                  <h1 class="o-tile__title">Bal w Koperniku</h1>
+                  <h2 class="o-tile__date"><img src="icons/date.svg" alt="">Środa, Luty 31, 2018</h2>
+                  <p class="o-tile__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
                 </div>
-                <p>Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-              </article>
             </a>
 
-            <a href="#" class="a--non-styled">
-              <article>
-                <img src="images/sample3.jpg" alt="">
-                <h1>Kolejny super występ chóru</h1>
-                <div class="article__data">
-                  Czwartek, Grudzień 1, 2017
+            <a class="o-tile o-tile--article a--non-styled" href="#">
+                <img class="o-tile__img" src="images/sample3.jpg" alt="">
+                <div class="o-tile__wrapper-text">
+                  <h1 class="o-tile__title">Chór pokazuje co to znaczy śpiewać</h1>
+                  <h2 class="o-tile__date"><img src="icons/date.svg" alt="">Sobota, Październik 23, 2018</h2>
+                  <p class="o-tile__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...</p>
-              </article>
-            </a>
-
-            <a href="#" class="a--non-styled">
-              <article>
-                <img src="images/sample4.jpg" alt="">
-                <h1>Pani Masłowska w zakładzie dla fizyków</h1>
-                <div class="article__data">
-                  Sobota, Październik 25, 2017
-                </div>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit...</p>
-              </article>
             </a>
           </div>
-          <a href="#" class="a--non-styled">
-            <div class="button button--main-section">
-                <span>Pokaż więcej...</span>
-            </div>
+          <a href="#" class="o-button o-button--o-section a--non-styled">
+            <span class="o-button__text">Pokaż więcej...</span>
           </a>
         </section>
 
-        <section id="main__section-projects">
-          <h1 class="section__title">Projekty</h1>
-          <div id="section__content-projects" class="section__content">
-            <a href="#">
-              <div class="content-projects__tile">
-                <img src="images/project_sample1.jpg" alt="">
-              </div>
+        <section class="o-section o-section--main o-section--projects">
+          <h1 class="o-section__title o-section__title--main">Projekty</h1>
+          <div class="o-section__tiles o-section__tiles--projects">
+            <a class="o-tile o-tile--project a--non-styled" href="#">
+              <img class="o-tile__img o-tile__img--project" src="images/project_sample1.jpg" alt="">
             </a>
-            <a href="#">
-              <div class="content-projects__tile">
-                <img src="images/project_sample2.jpg" alt="">
-              </div>
+
+            <a class="o-tile o-tile--project a--non-styled" href="#">
+              <img class="o-tile__img o-tile__img--project" src="images/project_sample2.jpg" alt="">
             </a>
-            <a href="#">
-              <div class="content-projects__tile">
-                <img src="images/project_sample3.png" alt="">
-              </div>
+
+            <a class="o-tile o-tile--project a--non-styled" href="#">
+              <img class="o-tile__img o-tile__img--project" src="images/project_sample3.png" alt="">
             </a>
-            <a href="#">
-              <div class="content-projects__tile">
-                <img src="images/project_sample4.jpg" alt="">
-              </div>
+
+            <a class="o-tile o-tile--project a--non-styled" href="#">
+              <img class="o-tile__img o-tile__img--project" src="images/project_sample4.jpg" alt="">
             </a>
-            <a href="#">
-              <div class="content-projects__tile">
-                <img src="images/project_sample5.jpg" alt="">
-              </div>
+
+            <a class="o-tile o-tile--project a--non-styled" href="#">
+              <img class="o-tile__img o-tile__img--project" src="images/project_sample5.jpg" alt="">
             </a>
-            <a href="#">
-              <div class="content-projects__tile">
-                <img src="images/project_sample6.jpg" alt="">
-              </div>
+
+            <a class="o-tile o-tile--project a--non-styled" href="#">
+              <img class="o-tile__img o-tile__img--project" src="images/project_sample6.jpg" alt="">
             </a>
-            <a href="#">
-              <div class="content-projects__tile">
-                <img src="images/project_sample7.jpg" alt="">
-              </div>
+
+            <a class="o-tile o-tile--project a--non-styled" href="#">
+              <img class="o-tile__img o-tile__img--project" src="images/project_sample7.jpg" alt="">
             </a>
-            <a href="#">
-              <div class="content-projects__tile">
-                <img src="images/project_sample8.jpg" alt="">
-              </div>
+
+            <a class="o-tile o-tile--project a--non-styled" href="#">
+              <img class="o-tile__img o-tile__img--project" src="images/project_sample8.jpg" alt="">
             </a>
-            <a href="#">
-              <div class="content-projects__tile">
-                <img src="images/project_sample9.jpg" alt="">
-              </div>
+
+            <a class="o-tile o-tile--project a--non-styled" href="#">
+              <img class="o-tile__img o-tile__img--project" src="images/project_sample9.jpg" alt="">
             </a>
-            <a href="#">
-              <div class="content-projects__tile">
-                <img src="images/project_sample10.png" alt="">
-              </div>
+
+            <a class="o-tile o-tile--project a--non-styled" href="#">
+              <img class="o-tile__img o-tile__img--project" src="images/project_sample10.png" alt="">
             </a>
-            <a href="#">
-              <div class="content-projects__tile">
-                <img src="images/project_sample11.png" alt="">
-              </div>
+
+            <a class="o-tile o-tile--project a--non-styled" href="#">
+              <img class="o-tile__img o-tile__img--project" src="images/project_sample11.png" alt="">
             </a>
-            <a href="#">
-              <div class="content-projects__tile">
-                <img src="images/project_sample12.jpg" alt="">
-              </div>
+
+            <a class="o-tile o-tile--project a--non-styled" href="#">
+              <img class="o-tile__img o-tile__img--project" src="images/project_sample12.jpg" alt="">
             </a>
-            <a href="#">
-              <div class="content-projects__tile">
-                <img src="images/project_sample13.jpg" alt="">
-              </div>
+
+            <a class="o-tile o-tile--project a--non-styled" href="#">
+              <img class="o-tile__img o-tile__img--project" src="images/project_sample13.jpg" alt="">
             </a>
-            <a href="#">
-              <div class="content-projects__tile">
-                <img src="images/project_sample14.png" alt="">
-              </div>
+
+            <a class="o-tile o-tile--project a--non-styled" href="#">
+              <img class="o-tile__img o-tile__img--project" src="images/project_sample14.png" alt="">
             </a>
-            <a href="#">
-              <div class="content-projects__tile">
-                <img src="images/project_sample15.jpg" alt="">
-              </div>
+
+            <a class="o-tile o-tile--project a--non-styled" href="#">
+              <img class="o-tile__img o-tile__img--project" src="images/project_sample15.jpg" alt="">
             </a>
           </div>
         </section>
       </div>
 
       <!-- main-wrapper scripts -->
-      <!-- ... -->
+      <!-- coming soon -->
     </main>
 
-    <footer>
-      <div id="footer-wrapper">
-        <section>
-          <div class="section__title">
-            <img src="icons/footer/adress.svg" alt="adress.svg">
-            <h1>Adres</h1>
+    <footer class="c-footer">
+      <div class="c-footer__wrapper-sections">
+        <section class="c-footer__section">
+          <div class="c-footer__wrapper-title">
+            <img class="c-footer__img" src="icons/footer/adress.svg" alt="adress.svg">
+            <h1 class="c-footer__title">Adres</h1>
           </div>
 
-          <div class="section__text">
-            <span>ul. Kościuszki 10</span>
-            <span>62-800 Kalisz</span>
-          </div>
-        </section>
-
-        <section>
-          <div class="section__title">
-            <img src="icons/footer/phone.svg" alt="phone.svg">
-            <h1>Kontakt</h1>
-          </div>
-
-          <div class="section__text">
-            <span>62 767 20 36</span>
-            <span>767 20 37 (tel/fax)</span>
+          <div class="c-footer__text">
+            <p>ul. Kościuszki 10</p>
+            <p>62-800 Kalisz</p>
           </div>
         </section>
 
-        <section>
-          <div class="section__title">
-            <img src="icons/footer/mail_letter.svg" alt="mail_letter.svg">
-            <h1>e-mail</h1>
+        <section class="c-footer__section">
+          <div class="c-footer__wrapper-title">
+            <img class="c-footer__img" src="icons/footer/phone.svg" alt="phone.svg">
+            <h1 class="c-footer__title">Kontakt</h1>
           </div>
 
-          <div class="section__text">
-            <span>dyrekcja@kopernik.kalisz.pl</span>
-            <span>zspg1@um.kalisz.pl (sekretariat)</span>
-            <span>sekretariat@kopernik.kalisz.pl</span>
-            <span>kopernik@kopernik.kalisz.pl</span>
-            <span>ksiegowosc@kopernik.kalisz.pl</span>
+          <div class="c-footer__text">
+            <p>62 767 20 36</p>
+            <p>767 20 37 (tel/fax)</p>
           </div>
         </section>
 
-        <section>
-          <div class="section__title">
-            <img src="icons/footer/facebook.svg" alt="facebook.svg">
-            <h1>Facebook</h1>
+        <section class="c-footer__section">
+          <div class="c-footer__wrapper-title">
+            <img class="c-footer__img" src="icons/footer/mail_letter.svg" alt="mail_letter.svg">
+            <h1 class="c-footer__title">e-mail</h1>
           </div>
 
-          <div class="section__text">
-            <a href="https://www.facebook.com/IIILOKalisz"><span>@IIILOKalisz</span></a>
-          </div>
-        </section>
-
-        <section>
-          <div class="section__title">
-            <img src="icons/footer/lang.svg" alt="lang.svg">
-            <h1>Język</h1>
-          </div>
-
-          <div id="lang-icons">
-            <a href="#"><img src="icons/english.png" alt="english.png" class="marg-all-5"></a>
-            <a href="#"><img src="icons/france.png" alt="france.png" class="marg-all-5"></a>
-            <a href="#"><img src="icons/spain.png" alt="spain.png" class="marg-all-5"></a>
-            <a href="#"><img src="icons/germany.png" alt="germany.png" class="marg-all-5"></a>
+          <div class="c-footer__text">
+            <p>dyrekcja@kopernik.kalisz.pl</p>
+            <p>zspg1@um.kalisz.pl (sekretariat)</p>
+            <p>sekretariat@kopernik.kalisz.pl</p>
+            <p>kopernik@kopernik.kalisz.pl</p>
+            <p>ksiegowosc@kopernik.kalisz.pl</p>
           </div>
         </section>
 
-        <div class="clear"></div>
+        <section class="c-footer__section">
+          <div class="c-footer__wrapper-title">
+            <img class="c-footer__img" src="icons/footer/facebook.svg" alt="facebook.svg">
+            <h1 class="c-footer__title">Facebook</h1>
+          </div>
+
+          <div class="c-footer__text">
+            <span><a href="https://www.facebook.com/IIILOKalisz">@IIILOKalisz</a></span>
+          </div>
+        </section>
+
+        <section class="c-footer__section">
+          <div class="c-footer__wrapper-title">
+            <img class="c-footer__img" src="icons/footer/lang.svg" alt="lang.svg">
+            <h1 class="c-footer__title">Język</h1>
+          </div>
+
+          <div class="o-lang-icons">
+            <a class="o-lang-icons__icon a--non-styled" href="#">
+              <img class="o-lang-icons__img" src="icons/english.png" alt="english.png">
+            </a>
+            <a class="o-lang-icons__icon a--non-styled" href="#">
+              <img class="o-lang-icons__img" src="icons/france.png" alt="france.png">
+            </a>
+            <a class="o-lang-icons__icon a--non-styled" href="#">
+              <img class="o-lang-icons__img" src="icons/spain.png" alt="spain.png">
+            </a>
+            <a class="o-lang-icons__icon a--non-styled" href="#">
+              <img class="o-lang-icons__img" src="icons/germany.png" alt="germany.png">
+            </a>
+          </div>
+        </section>
       </div>
 
-      <div id="copyright">
+      <div class="c-footer__copyright">
         <span>© 2017 Mikołaj Kaźmierczak i Mateusz Antczak. All rights reserved.</span>
         <span>Footer icons made by Freepik, Pavel Kozlov and Alessio Atzeni from www.flaticon.com </span>
       </div>

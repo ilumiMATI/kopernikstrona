@@ -1,4 +1,4 @@
-header {
+.c-header {
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -10,40 +10,47 @@ header {
   background-color: $colorWhite;
   box-shadow: $shadowLite;
 }
-  .header__button {
+  .c-header__button {
     display: flex;
     align-items: center;
     z-index: 1;
     height: $sizeVrHeader;
-      img {
-        margin: 0px 10px;
-        height: 25px;
-      }
-      @media only screen and (min-width: 545px) {
-        img { height: 30px; }
-      }
-      span {
-        display: none;
-        font-size: 20px;
-        font-weight: bold;
-      }
-      @media only screen and (min-width: 545px) {
-        span { display: block; }
-      }
   }
+  .c-header__button:hover {
+    background-color: $colorButtonBackground;
+  }
+    .c-header__img {
+      margin: 0px 15px;
+      height: 25px;
+    }
+    @include breakpoint($breakPhoneUp) {
+      .c-header__img { height: 30px; }
+    }
+    .c-header__text {
+      position: relative;
+      top: 1px;
+      display: none;
+      font-size: 20px;
+    }
+    @include breakpoint($breakTabletUp) {
+      .c-header__text { display: block; }
+    }
+    .c-header__text--margin-right { margin-right: 15px; }
+    .c-header__text--margin-left { margin-left: 15px; }
 
-  #header__title-wrapper {
+  .c-header__wrapper-title {
     display: flex;
     align-items: center;
     height: $sizeVrHeader;
-      img {
-        margin-right: 10px;
-        height: 40px;
-      }
-      h1 {
-        font-size: 21px;
-      }
-      @media only screen and (min-width: 545px) {
-        h1 { font-size: 28px; }
-      }
   }
+    .c-header__emblem {
+      margin-right: 10px;
+      height: 40px;
+    }
+    .c-header__title {
+      font-size: 1.125em/*21px*/;
+      font-family: $fontTitleHeader;
+    }
+    @include breakpoint($breakPhoneUp) {
+      .c-header__title { font-size: 1.75em/*28px*/; }
+    }

@@ -2,43 +2,59 @@
   $sizeVrHeader: 55px;
   $sizeVrBody: calc(100% - #{$sizeVrHeader});
 
+  $sizeFont1: 3em;
+  $sizeFont2: 2em;
+  $sizeFont3: 1.5em;
+  $sizeFont4: 1em;
+  $sizeFont5: 0.750em;
+  $sizeFont6: 0.5em;
+
+/* breakpoints */
+  // see also: breakpoint() mixin
+  $breakPhoneUp: 550px;
+  $breakTabletUp: 780px;
+  $breakDesktopUp: 1000px;
+
 /* colors */
   $colorWhite: #ffffff;
+  $colorGrey: #555555;
+  $colorLightGrey: #e7e7e7;
   $colorBlack: #000000;
-  $colorBackground: #303030;
 
+  $colorBackground: #303030;
+  $colorButtonBackground: #{$colorLightGrey};
   $colorShadow: rgba(0,0,0,0.25);
   $colorLink: #3ec4d6;
   $colorLinkHover: #77d9e7;
+
+  $colorFooter: $colorBackground/*#263a4e*/;
+    $colorCopyright: /*$colorWhite*/#ededed;
 
   $colorSection1: #7cdbd5;
   $colorSection2: #f53240;
   $colorSection3: #f9be02;
   $colorSection4: #02c8a7;
   $colorSection5: #8fc33a;
-
   $colorSection6: #4d505b;
   $colorSection7: #cf4858;
   $colorSection8: #16a79d;
   $colorSection9: #80628b;
   $colorSection10: #f4ac42;
-
   $colorSection11: #ffffff;
   $colorSection12: #ff606e;
   $colorSection13: #00ddd8;
   $colorSection14: #517398;
   $colorSection15: #262c3a;
-
   $colorSection16: #d79922;
   $colorSection17: #efe2ba;
   $colorSection18: #f13c20;
   $colorSection19: #4056a1;
   $colorSection20: #c5cbe3;
-
   $colorSection21: #6ed3cf;
   $colorSection22: #9068be;
   $colorSection23: #e1e8f0;
   $colorSection24: #e62739;
+  $colorSection25: #76323f;
   /* other worth trying:
   (#4d505b #cf4858 #16a79d #80628b #f4ac42)
   (#ffffff #ff606e #00ddd8 #517398 #262c3a)
@@ -46,43 +62,79 @@
   (#6ed3cf #9068be #e1e8f0 #e62739)
   */
 
-  $colorFooter: $colorBackground/*#263a4e*/;
-  $colorCopyright: /*$colorWhite*/#ededed;
-
 /* fonts */
     /* font faces */
     @font-face {
-      font-family: 'AvertaDemo';
-      src: url('../fonts/averta_demo.otf');
+      font-family: "AvertaDemo";
+      src: url("../fonts/averta_demo.otf");
       font-style: normal;
     }
     @font-face {
-      font-family: 'ZonaProBold';
-      src: url('../fonts/zona_pro_bold.otf');
+      font-family: "ZonaProBold";
+      src: url("../fonts/zona_pro_bold.otf");
       font-style: normal;
     }
     @font-face {
-      font-family: 'ZonaProLight';
-      src: url('../fonts/zona_pro_light.otf');
+      font-family: "ZonaProLight";
+      src: url("../fonts/zona_pro_light.otf");
       font-style: normal;
     }
 
     /* google fonts */
     /*
-    font-family: 'Josefin Sans', sans-serif;
-    font-family: 'Quicksand', sans-serif;
-    font-family: 'Hammersmith One', sans-serif;
-    font-family: 'Forum', cursive;
+    font-family: "Forum", cursive;
+    font-family: "Hammersmith One", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Quicksand", sans-serif;
 
-    font-family: 'Lora', serif;
-    font-family: 'Playfair Display', serif;
-    font-family: 'EB Garamond', serif;
-    font-family: 'Libre Baskerville', serif;
+    font-family: "EB Garamond", serif;
+    font-family: "Libre Baskerville", serif;
+    font-family: "Lora", serif;
+    font-family: "Playfair Display", serif;
+
+    font-family: "Rubik", sans-serif;
+    font-family: "Roboto", sans-serif;
+
+    font-family: "Cormorant", serif;
+    font-family: "Yantramanav", sans-serif;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-family: "Yeseva One", cursive;
     */
-    @import "https://fonts.googleapis.com/css?family=Forum|Hammersmith+One|Josefin+Sans|Quicksand|EB+Garamond|Libre+Baskerville|Lora|Playfair+Display";
+    @import "https://fonts.googleapis.com/css?family=Forum|Hammersmith+One|Josefin+Sans|Quicksand|EB+Garamond|Libre+Baskerville|Lora|Playfair+Display|Rubik|Roboto|Cormorant|Yantramanav|Montserrat+Alternates|Yeseva+One";
 
-  $fontHeaderTitle: 'Forum', cursive;
-  $fontButtonHeader: 'Quicksand', sans-serif;
+  $fontDefault: "Roboto", sans-serif;
+  $fontTitleSection: "Libre Baskerville", serif;
+  $fontTitleTile: "Rubik", sans-serif;
+  $fontTitleHeader: "Forum", cursive;
+  $fontButtonHeader: "Quicksand", sans-serif;
 
 /* shadows */
   $shadowLite: 0 0 5px $colorShadow;
+
+
+/* healthcheck - outlining all elements with certain things */
+  /* UNCOMMENT IN CASE OF EMERGENCY */
+
+  // BEM - Blocks
+  //  [class] { outline: 5px solid #ff00bf; }
+
+  // BEM - Elements
+  //  [class*="__"] { outline: 5px solid #00ff21; }
+
+  // BEM - Modifiers
+  //  [class*="--"] { outline: 5px solid #0012ff; }
+
+  // NAMESPACE - Objects
+  //  [class^="o-"], [class*=" o-"] { outline: 5px solid #ff8200; }
+
+  // NAMESPACE - Components
+  //  [class^="c-"], [class*=" c-"] { outline: 5px solid #00ffcb; }
+
+  // NAMESPACE - Utility Classes
+  //  [class^="u-"], [class*=" u-"] { outline: 5px solid #00ff38; }
+
+  // NAMESPACE - Responsive Classes
+  //  [class*="@"] { outline: 5px solid #a7af24; }
+
+  // NAMESPACE - Hack Classes
+  //  [class^="_"] { outline: 5px solid #ff50be; }

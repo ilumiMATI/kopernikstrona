@@ -1,12 +1,12 @@
 html, body {
   width: 100%;
   height: $sizeVrBody;
-  font-family: $fontHeaderTitle;
+  font-family: $fontDefault;
   background-color: $colorBackground;
 }
 
 * { box-sizing: border-box; }
-.clear { clear:both; }
+.u-clear { clear:both; }
 
 /* links */
 a {
@@ -27,39 +27,33 @@ a {
   &.a--non-styled:active  {  }
 }
 
-/* sector bar */
-.sector-bar {
-  width: 100%;
-  height: 10px;
-  background-color: $colorWhite;
-}
-
 /* button */
-.button {
+.o-button {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
   width: 150px;
   height: 50px;
-  border: 5px solid $colorWhite;
+  border: 3px solid $colorWhite;
   border-radius: 25px;
   box-shadow: $shadowLite;
   transition: background-color 0.25s;
-    span {
-      color: $colorWhite;
-      font-size: 23px;
-      font-weight: bold;
-      text-align: center;
-      transition: color 0.25s;
-    }
 }
-.button:hover {
+.o-button:hover {
   background-color: $colorWhite;
-    span {
-      color: $colorBlack;
-    }
 }
-  .button--main-section {
-    width: 250px;
+.o-button--o-section {
+  width: 250px;
+}
+  .o-button__text {
+    color: $colorWhite;
+    font-family: $fontTitleTile;
+    font-size: $sizeFont3;
+    font-weight: bold;
+    text-align: center;
+    transition: color 0.25s;
+  }
+  .o-button:hover .o-button__text {
+    color: $colorBlack;
   }
