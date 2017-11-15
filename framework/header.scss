@@ -11,6 +11,7 @@
   box-shadow: $shadowLite;
 }
   .c-header__button {
+    align-self: flex-start;
     display: flex;
     align-items: center;
     z-index: 1;
@@ -24,7 +25,9 @@
       height: 25px;
     }
     @include breakpoint($breakPhoneUp) {
-      .c-header__img { height: 30px; }
+      .c-header__img {
+        height: 30px;
+      }
     }
     .c-header__text {
       position: relative;
@@ -33,10 +36,16 @@
       font-size: 20px;
     }
     @include breakpoint($breakTabletUp) {
-      .c-header__text { display: block; }
+      .c-header__text {
+        display: block;
+      }
     }
-    .c-header__text--margin-right { margin-right: 15px; }
-    .c-header__text--margin-left { margin-left: 15px; }
+    .c-header__text--margin-right {
+      margin-right: 15px;
+    }
+    .c-header__text--margin-left {
+      margin-left: 15px;
+    }
 
   .c-header__wrapper-title {
     display: flex;
@@ -48,9 +57,11 @@
       height: 40px;
     }
     .c-header__title {
-      font-size: 1.125em/*21px*/;
+      font-size: 1.25em;
       font-family: $fontTitleHeader;
     }
     @include breakpoint($breakPhoneUp) {
-      .c-header__title { font-size: 1.75em/*28px*/; }
+      .c-header__title {
+        font-size: 1.75em;
+      }
     }

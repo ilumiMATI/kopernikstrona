@@ -120,6 +120,7 @@ a.a--non-styled:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.25); }
 
 .c-header__button {
+  align-self: flex-start;
   display: flex;
   align-items: center;
   z-index: 1;
@@ -160,7 +161,7 @@ a.a--non-styled:hover {
   height: 40px; }
 
 .c-header__title {
-  font-size: 1.125em;
+  font-size: 1.25em;
   font-family: "Forum", cursive; }
 
 @media only screen and (min-width: 550px) {
@@ -173,8 +174,10 @@ a.a--non-styled:hover {
   overflow: hidden; }
 
 .o-section {
-  padding: 60px 0px;
   width: 100%; }
+
+.o-section--main {
+  padding: 60px 0px; }
 
 .o-section--articles {
   background-color: #76323f; }
@@ -199,15 +202,15 @@ a.a--non-styled:hover {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-around;
-  margin: 60px auto 40px auto;
+  justify-content: space-evenly;
+  margin: 60px auto 0 auto;
   width: 100%; }
-  @media only screen and (min-width: 780px) {
+  @media only screen and (min-width: 1000px) {
     .o-section__tiles {
       width: 70%; } }
 
 .o-section__tiles--projects {
-  justify-content: center;
-  margin: 60px auto 0 auto; }
+  justify-content: center; }
 
 .o-tile {
   overflow: hidden;
@@ -220,7 +223,7 @@ a.a--non-styled:hover {
   margin-bottom: 30px;
   width: 80%; }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 550px) {
   .o-tile--article {
     width: 30%; } }
 .o-tile--project {
@@ -249,17 +252,19 @@ a.a--non-styled:hover {
   margin-bottom: 5px;
   font-family: "Rubik", sans-serif;
   font-weight: bold;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  text-align: center; }
 
 .o-tile--article:hover .o-tile__title {
   text-decoration: underline; }
 
 .o-tile__date {
+  color: #555555;
   font-size: 0.75em;
-  color: #555555; }
+  text-align: center; }
   .o-tile__date img {
     position: relative;
-    top: 0.1em;
+    top: 2px;
     margin-right: 5px;
     width: 1em; }
 
@@ -282,7 +287,7 @@ a.a--non-styled:hover {
   padding: 20px 5px;
   width: 100%;
   text-align: center; }
-  @media only screen and (min-width: 780px) {
+  @media only screen and (min-width: 1000px) {
     .c-footer__section {
       width: 20%; } }
 

@@ -5,11 +5,10 @@
     overflow: hidden;
   }
     .o-section {
-      padding: 60px 0px;
       width: 100%;
     }
     .o-section--main {
-
+      padding: 60px 0px;
     }
     .o-section--articles { background-color: $colorSection25; }
     .o-section--projects { background-color: $colorSection14; }
@@ -31,8 +30,9 @@
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;
-        justify-content: space-around;
-        margin: 60px auto 40px auto;
+        justify-content: space-around; // in case space-evenly doesnt work
+        justify-content: space-evenly;
+        margin: 60px auto 0 auto;
         @include width(70);
       }
       .o-section__tiles--articles {
@@ -40,7 +40,6 @@
       }
       .o-section__tiles--projects {
         justify-content: center;
-        margin: 60px auto 0 auto;
       }
         .o-tile {
           overflow: hidden;
@@ -53,8 +52,10 @@
           margin-bottom: 30px;
           width: 80%;
         }
-        @include breakpoint($breakDesktopUp) {
-          .o-tile--article { width: 30%; }
+        @include breakpoint($breakPhoneUp) {
+          .o-tile--article {
+            width: 30%;
+          }
         };
         .o-tile--project {
           border-radius: 50%;
@@ -85,16 +86,18 @@
               font-family: $fontTitleTile;
               font-weight: bold;
               font-size: $sizeFont3;
+              text-align: center;
             }
             .o-tile--article:hover .o-tile__title {
               text-decoration: underline;
             }
             .o-tile__date {
-              font-size: $sizeFont5;
               color: $colorGrey;
+              font-size: $sizeFont5;
+              text-align: center;
               img {
                 position: relative;
-                top: 0.1em;
+                top: 2px;
                 margin-right: 5px;
                 width: $sizeFont4;
               }

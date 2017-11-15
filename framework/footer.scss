@@ -16,7 +16,9 @@
       text-align: center;
     }
     @include breakpoint($breakTabletUp) {
-      .c-footer__section { padding: 40px 5px; }
+      .c-footer__section {
+        padding: 40px 5px;
+      }
     }
       .c-footer__wrapper-title {
         display: flex;

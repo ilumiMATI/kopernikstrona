@@ -1,7 +1,7 @@
 /* width */
 @mixin width($percent) {
   width: 100%;
-    @include breakpoint($breakTabletUp) { width: percentage($percent / 100); }
+    @include breakpoint($breakDesktopUp) { width: percentage($percent / 100); }
 }
 
 /* breakpoint */
