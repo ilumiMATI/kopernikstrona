@@ -58,7 +58,7 @@
     }
     .c-header__title {
       font-size: 1.25em;
-      font-family: $fontTitleHeader;
+      font-family: $fontLogo;
     }
     @include breakpoint($breakPhoneUp) {
       .c-header__title {

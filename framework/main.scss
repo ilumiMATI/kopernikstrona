@@ -13,8 +13,8 @@
     .o-section--articles { background-color: $colorSection25; }
     .o-section--projects { background-color: $colorSection14; }
       .o-section__title {
-        font-family: $fontTitleSection;
-        font-weight: 700;
+        font-family: $fontTitle;
+        //font-weight: 700;
         font-size: $sizeFont2;
       }
       .o-section__title--main {
@@ -83,10 +83,8 @@
           }
             .o-tile__title {
               margin-bottom: 5px;
-              font-family: $fontTitleTile;
               font-weight: bold;
               font-size: $sizeFont3;
-              text-align: center;
             }
             .o-tile--article:hover .o-tile__title {
               text-decoration: underline;
@@ -94,7 +92,6 @@
             .o-tile__date {
               color: $colorGrey;
               font-size: $sizeFont5;
-              text-align: center;
               img {
                 position: relative;
                 top: 2px;

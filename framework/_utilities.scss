@@ -30,15 +30,15 @@
   $colorFooter: $colorBackground/*#263a4e*/;
     $colorCopyright: /*$colorWhite*/#ededed;
 
-  $colorSection1: #7cdbd5;
-  $colorSection2: #f53240;
-  $colorSection3: #f9be02;
-  $colorSection4: #02c8a7;
-  $colorSection5: #8fc33a;
-  $colorSection6: #4d505b;
-  $colorSection7: #cf4858;
-  $colorSection8: #16a79d;
-  $colorSection9: #80628b;
+  $colorSection1:  #7cdbd5;
+  $colorSection2:  #f53240;
+  $colorSection3:  #f9be02;
+  $colorSection4:  #02c8a7;
+  $colorSection5:  #8fc33a;
+  $colorSection6:  #4d505b;
+  $colorSection7:  #cf4858;
+  $colorSection8:  #16a79d;
+  $colorSection9:  #80628b;
   $colorSection10: #f4ac42;
   $colorSection11: #ffffff;
   $colorSection12: #ff606e;
@@ -81,32 +81,13 @@
     }
 
     /* google fonts */
-    /*
-    font-family: "Forum", cursive;
-    font-family: "Hammersmith One", sans-serif;
-    font-family: "Josefin Sans", sans-serif;
-    font-family: "Quicksand", sans-serif;
+    @import "https://fonts.googleapis.com/css?family=Forum|Libre+Baskerville|Rubik|Roboto";
 
-    font-family: "EB Garamond", serif;
-    font-family: "Libre Baskerville", serif;
-    font-family: "Lora", serif;
-    font-family: "Playfair Display", serif;
-
-    font-family: "Rubik", sans-serif;
-    font-family: "Roboto", sans-serif;
-
-    font-family: "Cormorant", serif;
-    font-family: "Yantramanav", sans-serif;
-    font-family: "Montserrat Alternates", sans-serif;
-    font-family: "Yeseva One", cursive;
-    */
-    @import "https://fonts.googleapis.com/css?family=Forum|Hammersmith+One|Josefin+Sans|Quicksand|EB+Garamond|Libre+Baskerville|Lora|Playfair+Display|Rubik|Roboto|Cormorant|Yantramanav|Montserrat+Alternates|Yeseva+One";
-
-  $fontDefault: "Roboto", sans-serif;
-  $fontTitleSection: "Libre Baskerville", serif;
-  $fontTitleTile: "Rubik", sans-serif;
-  $fontTitleHeader: "Forum", cursive;
-  $fontButtonHeader: "Quicksand", sans-serif;
+  $fontLogo:    "Forum", cursive;
+  // $fontDefault: "Roboto", sans-serif;
+  $fontDefault: "Rubik", sans-serif;
+  $fontTitle:   "Libre Baskerville", serif;
+  $fontMain:    "Rubik", sans-serif;
 
 /* shadows */
   $shadowLite: 0 0 5px $colorShadow;
