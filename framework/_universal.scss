@@ -1,3 +1,5 @@
+* { box-sizing: border-box; }
+
 html, body {
   width: 100%;
   height: $sizeVrBody;
@@ -5,26 +7,21 @@ html, body {
   background-color: $colorBackground;
 }
 
-* { box-sizing: border-box; }
 .u-clear { clear:both; }
 
 /* links */
 a {
-  // link - unvisited link
+  // link    - unvisited link
   // visited - visited link
-  // hover - user mouses over a link
-  // focus - user clicks on a link
-  // active - user has clicked a link
+  // hover   - user mouses over a link
+  // focus   - user clicks on a link
+  // active  - user has clicked a link
   &:link    { color: $colorLink; }
   &:visited { color: $colorLink; }
   &:hover   { color: $colorLinkHover }
-  &:focus   {  }
-  &:active  {  }
   &.a--non-styled:link    { text-decoration: none; color: inherit; }
   &.a--non-styled:visited { text-decoration: none; color: inherit; }
   &.a--non-styled:hover   { text-decoration: none; color: inherit; }
-  &.a--non-styled:focus   {  }
-  &.a--non-styled:active  {  }
 }
 
 /* button */
@@ -81,14 +78,14 @@ a {
     }
   }
 
-/* language */
+/* language icons */
 .o-lang-icons {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   margin-top: 10px;
 }
-.o-lang-icons {
+.o-lang-icons--full-width {
   width: 100%;
 }
 .o-lang-icons--align-center {

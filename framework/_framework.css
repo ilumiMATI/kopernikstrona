@@ -4,12 +4,7 @@
 /* sizes */
 /* breakpoints */
 /* colors */
-/* other worth trying:
-(#4d505b #cf4858 #16a79d #80628b #f4ac42)
-(#ffffff #ff606e #00ddd8 #517398 #262c3a)
-(#d79922 #efe2ba #f13c20 #4056a1 #c5cbe3)
-(#6ed3cf #9068be #e1e8f0 #e62739)
-*/
+/* shadows */
 /* fonts */
 /* font faces */
 @import "https://fonts.googleapis.com/css?family=Forum|Libre+Baskerville|Rubik|Roboto";
@@ -26,17 +21,16 @@
   src: url("../fonts/zona_pro_light.otf");
   font-style: normal; }
 /* google fonts */
-/* shadows */
 /* healthcheck - outlining all elements with certain things */
 /* UNCOMMENT IN CASE OF EMERGENCY */
+* {
+  box-sizing: border-box; }
+
 html, body {
   width: 100%;
   height: calc(100% - 55px);
   font-family: "Rubik", sans-serif;
   background-color: #303030; }
-
-* {
-  box-sizing: border-box; }
 
 .u-clear {
   clear: both; }
@@ -108,14 +102,14 @@ a.a--non-styled:hover {
 @media only screen and (min-width: 550px) {
   .o-kopernik-logo__title {
     font-size: 1.75em; } }
-/* language */
+/* language icons */
 .o-lang-icons {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   margin-top: 10px; }
 
-.o-lang-icons {
+.o-lang-icons--full-width {
   width: 100%; }
 
 .o-lang-icons--align-center {
@@ -304,7 +298,6 @@ a.a--non-styled:hover {
   color: #ffffff; }
 
 .c-footer__title {
-  margin-bottom: 30px;
   width: 100%; }
 
 .c-footer__title-text {
@@ -317,6 +310,7 @@ a.a--non-styled:hover {
   width: 50%; }
 
 .c-footer__section {
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -336,11 +330,17 @@ a.a--non-styled:hover {
 .c-footer__item--wrap {
   flex-wrap: wrap; }
 
-.c-footer__item--align-right {
-  justify-content: flex-end; }
-
 .c-footer__item--align-center {
   justify-content: center; }
+
+.c-footer__item--align-center-mobile {
+  justify-content: center; }
+
+@media only screen and (min-width: 1000px) {
+  .c-footer__item--align-center-mobile {
+    justify-content: left; } }
+.c-footer__item--align-right {
+  justify-content: flex-end; }
 
 .c-footer__img {
   margin-right: 15px;
@@ -352,7 +352,7 @@ a.a--non-styled:hover {
   margin-left: 15px;
   width: 50px;
   height: 50px;
-  background-color: #4056a1;
+  background-color: #3072b0;
   border-radius: 50%; }
 
 .c-footer__text {

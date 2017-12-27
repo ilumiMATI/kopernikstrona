@@ -1,3 +1,8 @@
+// ######### ### ######### ######### #########
+// ###       ###      ###  ###       ###
+// ######### ###    ###    ######    #########
+//       ### ###  ###      ###             ###
+// ######### ### ######### ######### #########
 /* sizes */
   $sizeVrHeader: 55px;
   $sizeVrBody: calc(100% - #{$sizeVrHeader});
@@ -15,53 +20,36 @@
   $breakTabletUp: 780px;
   $breakDesktopUp: 1000px;
 
+// ######### ######### ###    ######### ######### #########
+// ###       ###   ### ###    ###   ### ###   ### ###
+// ###       ###   ### ###    ###   ### ######### #########
+// ###       ###   ### ###    ###   ### ### ###         ###
+// ######### ######### ###### ######### ###   ### #########
 /* colors */
-  $colorWhite: #ffffff;
+  $colorBlack: #000000;
   $colorGrey: #555555;
   $colorLightGrey: #e7e7e7;
-  $colorBlack: #000000;
-
+  $colorWhite: #ffffff;
+  
   $colorBackground: #303030;
-  $colorButtonBackground: #{$colorLightGrey};
-  $colorShadow: rgba(0,0,0,0.25);
+  $colorButtonBackground: $colorLightGrey;
   $colorLink: #3ec4d6;
   $colorLinkHover: #77d9e7;
 
   $colorFooter: $colorBackground/*#263a4e*/;
     $colorCopyright: /*$colorWhite*/#ededed;
 
-  $colorSection1:  #7cdbd5;
-  $colorSection2:  #f53240;
-  $colorSection3:  #f9be02;
-  $colorSection4:  #02c8a7;
-  $colorSection5:  #8fc33a;
-  $colorSection6:  #4d505b;
-  $colorSection7:  #cf4858;
-  $colorSection8:  #16a79d;
-  $colorSection9:  #80628b;
-  $colorSection10: #f4ac42;
-  $colorSection11: #ffffff;
-  $colorSection12: #ff606e;
-  $colorSection13: #00ddd8;
-  $colorSection14: #517398;
-  $colorSection15: #262c3a;
-  $colorSection16: #d79922;
-  $colorSection17: #efe2ba;
-  $colorSection18: #f13c20;
-  $colorSection19: #4056a1;
-  $colorSection20: #c5cbe3;
-  $colorSection21: #6ed3cf;
-  $colorSection22: #9068be;
-  $colorSection23: #e1e8f0;
-  $colorSection24: #e62739;
-  $colorSection25: #76323f;
-  /* other worth trying:
-  (#4d505b #cf4858 #16a79d #80628b #f4ac42)
-  (#ffffff #ff606e #00ddd8 #517398 #262c3a)
-  (#d79922 #efe2ba #f13c20 #4056a1 #c5cbe3)
-  (#6ed3cf #9068be #e1e8f0 #e62739)
-  */
+  $colorSection1: #76323f;
+  $colorSection2: #517398;
 
+/* shadows */
+  $shadowLite: 0 0 5px rgba(0,0,0,0.25);
+
+  // ######### ######### ###   ### ######### #########
+// ###       ###   ### ####  ###    ###    ###
+// ######    ###   ### #########    ###    #########
+// ###       ###   ### ###  ####    ###          ###
+// ###       ######### ###   ###    ###    #########
 /* fonts */
     /* font faces */
     @font-face {
@@ -83,18 +71,18 @@
     /* google fonts */
     @import "https://fonts.googleapis.com/css?family=Forum|Libre+Baskerville|Rubik|Roboto";
 
-  $fontLogo:    "Forum", cursive;
-  // $fontDefault: "Roboto", sans-serif;
   $fontDefault: "Rubik", sans-serif;
+  $fontLogo:    "Forum", cursive;
   $fontTitle:   "Libre Baskerville", serif;
   $fontMain:    "Rubik", sans-serif;
 
-/* shadows */
-  $shadowLite: 0 0 5px $colorShadow;
-
-
+// ###   ### ######### ######### ### ######### ###   ###
+// ###   ### ###       ###   ### ###    ###    ###   ###
+// ######### ######    ######### ###    ###    #########
+// ###   ### ###       ###   ### ###    ###    ###   ###
+// ###   ### ######### ###   ### ###### ###    ###   ###
 /* healthcheck - outlining all elements with certain things */
-  /* UNCOMMENT IN CASE OF EMERGENCY */
+/* UNCOMMENT IN CASE OF EMERGENCY */
 
   // BEM - Blocks
   //  [class] { outline: 5px solid #ff00bf; }
