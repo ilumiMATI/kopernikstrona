@@ -1,0 +1,87 @@
+.c-footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: $colorFooter;
+}
+  .c-footer__wrapper-sections {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 5px;
+    width: 100%;
+    color: $colorWhite;
+  }
+    .c-footer__title {
+      width: 100%;
+    }
+      .c-footer__title-text {
+        margin-bottom: 20px;
+        font-size: $sizeFont2;
+        font-family: $fontTitle;
+        text-align: center;
+      }
+      .c-footer__title-line {
+        width: 50%;
+      }
+    .c-footer__section {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      @include width(20);
+    }
+    .c-footer__section--space-around {
+      justify-content: space-around;
+    }
+    @include breakpoint($breakTabletUp) {
+      .c-footer__section {
+        //padding: 40px 5px;
+      }
+    }
+      .c-footer__item {
+        display: flex;
+        align-items: center;
+        padding: 10px 0px;
+      }
+      .c-footer__item--wrap {
+        flex-wrap: wrap;
+      }
+      .c-footer__item--align-center {
+        justify-content: center;
+      }
+      .c-footer__item--align-center-mobile {
+        justify-content: center;
+      }
+      @include breakpoint($breakDesktopUp) {
+        .c-footer__item--align-center-mobile {
+          justify-content: left;
+        }
+      }
+      .c-footer__item--align-right {
+        justify-content: flex-end;
+      }
+        .c-footer__img {
+          margin-right: 15px;
+          width: 25px;
+          height: 25px;
+        }
+        .c-footer__img--facebook {
+          margin-right: 0px;
+          margin-left: 15px;
+          width: 50px;
+          height: 50px;
+          background-color: #3072b0;
+          border-radius: 50%;
+        }
+        .c-footer__text {
+          font-size: 16px;
+        }
+
+.c-footer__copyright {
+  padding: 20px;
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  background-color: $colorCopyright;
+}

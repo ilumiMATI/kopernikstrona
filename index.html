@@ -12,118 +12,251 @@ Authors: Mikołaj Kaźmierczak and Mateusz Antczak
     <!-- links -->
       <!-- css -->
         <!-- _css_normalize (MUST be at the top) -->
-        <link rel="stylesheet" href="css\_css_normalize.css">
+        <link rel="stylesheet" href="framework/_css_normalize.css">
         <!-- framework -->
-        <link rel="stylesheet" href="framework/framework.css">
-      <link rel="stylesheet" href="css/header.css">
-      <link rel="stylesheet" href="css/main_wrapper.css">
-      <link rel="stylesheet" href="css/footer.css">
-      <!-- head scripts -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="framework/_framework.css">
+    <!-- head scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
 
   <body>
-    <header>
-      <div id="button-menu" class="header-button">
-        <img src="icons/menu.svg" alt="menu.svg" class="center-rl-both">
-        <span class="center-ab-vr">Menu</span>
-      </div>
+    <header class="c-header">
+      <a class="c-header__button a--non-styled" href="#">
+        <img class="c-header__img" src="icons/header/menu.svg" alt="menu.svg">
+        <span class="c-header__text c-header__text--margin-right">Menu</span>
+      </a>
 
-      <div id="title-wrapper" class="center-ab-hr">
-        <div id="title-logo" class="center-rl-vr">
-          <img src="images/emblem_logo.png" alt="emblem.png" class="center-rl-vr">
-        </div>
+      <a class="o-kopernik-logo a--non-styled" href="index.html">
+        <img class="o-kopernik-logo__emblem" src="icons/header/emblem_logo.png" alt="emblem.png">
+        <h1 class="o-kopernik-logo__title">III Liceum Kopernik</h1>
+      </a>
 
-        <div id="title-text" class="center-rl-vr">
-          <h1 class="center-rl-vr">III Liceum Kopernik</h1>
-        </div>
-
-        <div class="clear"></div>
-      </div>
-
-      <div id="button-apps" class="header-button">
-        <span class="center-ab-vr">Apps</span>
-        <img src="icons/apps.svg" alt="apps.svg" class="center-rl-both">
-      </div>
+      <a class="c-header__button a--non-styled" href="#">
+        <span class="c-header__text c-header__text--margin-left">Szybkie</span>
+        <img class="c-header__img" src="icons/header/quick.svg" alt="quick.svg">
+      </a>
 
       <!-- header scripts -->
-      <!-- ... -->
+        <!-- coming soon -->
     </header>
 
-    <div id="main-wrapper">
-      <div id="main-container">
+    <main class="c-main">
+      <div class="c-main__wrapper-main">
+        <section class="o-section o-section--main o-section--articles">
+          <h1 class="o-section__title o-section__title--main">Artykuły</h1>
+          <div class="o-section__tiles o-section__tiles--articles">
+            <a class="o-tile o-tile--article a--non-styled" href="#">
+                <img class="o-tile__img" src="images/sample1.jpg" alt="">
+                <div class="o-tile__wrapper-text">
+                  <h1 class="o-tile__title">Nowy pomnik szkoły</h1>
+                  <h2 class="o-tile__date"><img src="icons/date.svg" alt="">Poniedziałek, 3 Marzec 2017</h2>
+                  <p class="o-tile__text">Nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit...</p>
+                </div>
+            </a>
+
+            <a class="o-tile o-tile--article a--non-styled" href="#">
+                <img class="o-tile__img" src="images/sample2.jpg" alt="">
+                <div class="o-tile__wrapper-text">
+                  <h1 class="o-tile__title">Bal w Koperniku</h1>
+                  <h2 class="o-tile__date"><img src="icons/date.svg" alt="">Środa, 31 Luty 2018</h2>
+                  <p class="o-tile__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
+                </div>
+            </a>
+
+            <a class="o-tile o-tile--article a--non-styled" href="#">
+                <img class="o-tile__img" src="images/sample3.jpg" alt="">
+                <div class="o-tile__wrapper-text">
+                  <h1 class="o-tile__title">Chór pokazuje co to znaczy śpiewać</h1>
+                  <h2 class="o-tile__date"><img src="icons/date.svg" alt="">Sobota, 23 Październik 2018</h2>
+                  <p class="o-tile__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                </div>
+            </a>
+          </div>
+          <a href="#" class="o-button o-button--o-section a--non-styled">
+            <span class="o-button__text">Pokaż więcej...</span>
+          </a>
+        </section>
+
+        <section class="o-section o-section--main">
+          <div class="o-section__columns">
+            <div class="o-section__column o-section__column--1">
+              <img class="o-section__image" src="images/sample5.jpg" alt="">
+            </div>
+
+            <div class="o-section__column o-section__column--2">
+              <h1 class="o-section__title o-section__title--main">Chcesz się pomęczyć w naszej szkole?</h1>
+              <p class="o-section__text">To chodź jesteśmy chętni w tym pomóc! Witamy w piekle! Heeeej. Więcej tekstu tu dać potem. Dobra teraz lorem ipsium.</p>
+              <p class="o-section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem maxime ipsam cumque dolor molestiae sequi at saepe excepturi nam eligendi molestias, officia corrupti aperiam quia adipisci repudiandae doloremque incidunt?</p>
+
+              <a href="#" class="o-button o-button--o-section a--non-styled">
+                <span class="o-button__text">Pokaż więcej...</span>
+              </a>
+            </div>
+          </div>
+        </section>
+        
+        <section style="background-color: #59ca62" class="o-section o-section--main">
+          <div class="o-section__columns">
+            <div class="o-section__column o-section__column--1">
+              <h1 class="o-section__title o-section__title--main">Super imprezy każdego dnia!</h1>
+              <p class="o-section__text">Naprawdę nie wiem co tu pisać więc lepiej żebym nic nie pisał, co ja tu robię w ogóle...</p>
+              <p class="o-section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem molestias, officia corrupti aperiam quia adipisci repudiandae doloremque incidunt?</p>
+
+              <a href="#" class="o-button o-button--o-section a--non-styled">
+                <span class="o-button__text">Pokaż więcej...</span>
+              </a>
+            </div>
+
+            <div class="o-section__column o-section__column--2">
+              <img class="o-section__image" src="images/sample6.jpg" alt="">
+            </div>
+          </div>
+        </section>
+
+        <section class="o-section o-section--main o-section--projects">
+          <h1 class="o-section__title o-section__title--main">Projekty</h1>
+          <div class="o-section__tiles o-section__tiles--projects">
+            <a class="o-tile o-tile--project a--non-styled" href="#">
+              <img class="o-tile__img o-tile__img--project" src="images/project_sample1.jpg" alt="">
+            </a>
+
+            <a class="o-tile o-tile--project a--non-styled" href="#">
+              <img class="o-tile__img o-tile__img--project" src="images/project_sample2.jpg" alt="">
+            </a>
+
+            <a class="o-tile o-tile--project a--non-styled" href="#">
+              <img class="o-tile__img o-tile__img--project" src="images/project_sample3.png" alt="">
+            </a>
+
+            <a class="o-tile o-tile--project a--non-styled" href="#">
+              <img class="o-tile__img o-tile__img--project" src="images/project_sample4.jpg" alt="">
+            </a>
+
+            <a class="o-tile o-tile--project a--non-styled" href="#">
+              <img class="o-tile__img o-tile__img--project" src="images/project_sample5.jpg" alt="">
+            </a>
+
+            <a class="o-tile o-tile--project a--non-styled" href="#">
+              <img class="o-tile__img o-tile__img--project" src="images/project_sample6.jpg" alt="">
+            </a>
+
+            <a class="o-tile o-tile--project a--non-styled" href="#">
+              <img class="o-tile__img o-tile__img--project" src="images/project_sample7.jpg" alt="">
+            </a>
+
+            <a class="o-tile o-tile--project a--non-styled" href="#">
+              <img class="o-tile__img o-tile__img--project" src="images/project_sample8.jpg" alt="">
+            </a>
+
+            <a class="o-tile o-tile--project a--non-styled" href="#">
+              <img class="o-tile__img o-tile__img--project" src="images/project_sample9.jpg" alt="">
+            </a>
+
+            <a class="o-tile o-tile--project a--non-styled" href="#">
+              <img class="o-tile__img o-tile__img--project" src="images/project_sample10.png" alt="">
+            </a>
+
+            <a class="o-tile o-tile--project a--non-styled" href="#">
+              <img class="o-tile__img o-tile__img--project" src="images/project_sample11.png" alt="">
+            </a>
+
+            <a class="o-tile o-tile--project a--non-styled" href="#">
+              <img class="o-tile__img o-tile__img--project" src="images/project_sample12.jpg" alt="">
+            </a>
+
+            <a class="o-tile o-tile--project a--non-styled" href="#">
+              <img class="o-tile__img o-tile__img--project" src="images/project_sample13.jpg" alt="">
+            </a>
+
+            <a class="o-tile o-tile--project a--non-styled" href="#">
+              <img class="o-tile__img o-tile__img--project" src="images/project_sample14.png" alt="">
+            </a>
+
+            <a class="o-tile o-tile--project a--non-styled" href="#">
+              <img class="o-tile__img o-tile__img--project" src="images/project_sample15.jpg" alt="">
+            </a>
+          </div>
+        </section>
       </div>
 
       <!-- main-wrapper scripts -->
-      <!-- ... -->
-    </div>
+          <!-- coming soon -->
+    </main>
 
-    <footer>
-      <div class="sector-bar"></div>
+    <footer class="c-footer">
+      <div class="c-footer__wrapper-sections">
+        <div class="c-footer__title">
+          <h1 class="c-footer__title-text">Skontaktuj się z&nbspnami!</h1>
+          <hr class="c-footer__title-line">
+        </div>
 
-      <div id="footer-sections-container">
-        <section id="adress" class="width-20 pad-all-20">
-          <div class="footer-section-title">
-            <img src="icons/footer/adress.svg" alt="adress.svg">
-            <h1>Adres</h1>
+        <section class="c-footer__section">
+          <div class="c-footer__item c-footer__item--align-center-mobile">
+            <img class="c-footer__img" src="icons/footer/adress.svg" alt="adress.svg">
+            <div class="c-footer__text">
+              <p>ul. Kościuszki 10</p>
+              <p>62-800 Kalisz, Polska</p>
+            </div>
           </div>
 
-          <span>ul. Kościuszki 10</span>
-          <span>62-800 Kalisz</span>
-        </section>
-
-        <section id="contact" class="width-20 pad-all-20">
-          <div class="footer-section-title">
-            <img src="icons/footer/phone.svg" alt="phone.svg">
-            <h1>Kontakt</h1>
+          <div class="c-footer__item c-footer__item--align-center-mobile">
+            <img class="c-footer__img" src="icons/footer/phone.svg" alt="phone.svg">
+            <div class="c-footer__text">
+              <p>62 767 20 36</p>
+              <p>767 20 37 (tel/fax)</p>
+            </div>
           </div>
 
-          <span>62 767 20 36</span>
-          <span>tel/fax 767 20 37</span>
-          <span>dyrekcja@kopernik.kalisz.pl</span>
-          <span>zspg1@um.kalisz.pl (sekretariat)</span>
-          <span>sekretariat@kopernik.kalisz.pl</span>
-          <span>kopernik@kopernik.kalisz.pl</span>
-          <span>ksiegowosc@kopernik.kalisz.pl</span>
-        </section>
-
-        <section id="facebook" class="width-20 pad-all-20">
-          <div class="footer-section-title">
-            <img src="icons/footer/facebook.svg" alt="facebook.svg">
-            <h1>Facebook</h1>
+          <div class="c-footer__item c-footer__item--align-center-mobile">
+            <img class="c-footer__img" src="icons/footer/mail_letter.svg" alt="mail_letter.svg">
+            <div class="c-footer__text">
+              <a href="#"><p>sekretariat@kopernik.kalisz.pl</p></a>
+              <a href="#"><p>kopernik@kopernik.kalisz.pl</p></a>
+            </div>
           </div>
 
-          <span>@IIILOKalisz</span>
-        </section>
-
-        <section id="lang" class="width-20 pad-all-20">
-          <div class="footer-section-title">
-            <img src="icons/footer/lang.svg" alt="lang.svg">
-            <h1>Język</h1>
-          </div>
-
-          <div id="lang-icons">
-            <img src="icons/english.png" alt="english.png" class="marg-all-5">
-            <img src="icons/france.png" alt="france.png" class="marg-all-5">
-            <img src="icons/spain.png" alt="spain.png" class="marg-all-5">
+          <div class="c-footer__item c-footer__item--align-center-mobile">
+            <img class="c-footer__img" src="icons/footer/facebook.svg" alt="facebook.svg">
+            <div class="c-footer__text">
+              <p><a href="https://www.facebook.com/IIILOKalisz">@IIILOKalisz</a><p>
+            </div>
           </div>
         </section>
 
-        <section id="authors" class="width-20 pad-all-20">
-          <div class="footer-section-title">
-            <img src="icons/footer/authors-brain.svg" alt="authors-brain.svg">
-            <h1>Autorzy</h1>
+        <section class="c-footer__section c-footer__section--space-around">
+          <a class="o-kopernik-logo o-kopernik-logo--align-center a--non-styled" href="index.html">
+            <img class="o-kopernik-logo__emblem" src="icons/header/emblem_logo.png" alt="emblem.png">
+            <h1 class="o-kopernik-logo__title">III Liceum<br>Kopernik</h1>
+          </a>
+
+          <div class="c-footer__item c-footer__item--wrap c-footer__item--align-center">
+            <div class="c-footer__item">
+              <img class="c-footer__img" src="icons/footer/lang.svg" alt="lang.svg">
+              <div class="c-footer__text">
+                <p>Język</p>
+              </div>
+            </div>
+
+            <div class="o-lang-icons o-lang-icons--full-width o-lang-icons--align-center">
+              <a class="o-lang-icons__icon a--non-styled" href="#">
+                <img class="o-lang-icons__img" src="icons/english.png" alt="english.png">
+              </a>
+              <a class="o-lang-icons__icon a--non-styled" href="#">
+                <img class="o-lang-icons__img" src="icons/france.png" alt="france.png">
+              </a>
+              <a class="o-lang-icons__icon a--non-styled" href="#">
+                <img class="o-lang-icons__img" src="icons/spain.png" alt="spain.png">
+              </a>
+              <a class="o-lang-icons__icon a--non-styled" href="#">
+                <img class="o-lang-icons__img" src="icons/germany.png" alt="germany.png">
+              </a>
+            </div>
           </div>
-
-          <span>Mikołaj Kaźmierczak</span>
-          <span>Mateusz Antczak</span>
         </section>
-
-        <div class="clear"></div>
       </div>
 
-      <div id="copyright">
-        <span>&copy 2017 Mikołaj Kaźmierczak i Mateusz Antczak. All rights reserved.</span>
+      <div class="c-footer__copyright">
+        <span>© 2017 Mikołaj Kaźmierczak i Mateusz Antczak. All rights reserved.</span>
         <span>Footer icons made by Freepik, Pavel Kozlov and Alessio Atzeni from www.flaticon.com </span>
       </div>
 

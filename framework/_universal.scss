@@ -1,0 +1,101 @@
+* { box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: $sizeVrBody;
+  font-family: $fontMain;
+  background-color: $colorBackground;
+}
+
+.u-clear { clear:both; }
+
+/* links */
+a {
+  // link    - unvisited link
+  // visited - visited link
+  // hover   - user mouses over a link
+  // focus   - user clicks on a link
+  // active  - user has clicked a link
+  &:link    { color: $colorLink; }
+  &:visited { color: $colorLink; }
+  &:hover   { color: $colorLinkHover }
+  &.a--non-styled:link    { text-decoration: none; color: inherit; }
+  &.a--non-styled:visited { text-decoration: none; color: inherit; }
+  &.a--non-styled:hover   { text-decoration: none; color: inherit; }
+}
+
+/* button */
+.o-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 150px;
+  height: 50px;
+  border: 3px solid $colorWhite;
+  border-radius: 25px;
+  box-shadow: $shadowLite;
+  transition: background-color 0.25s;
+}
+.o-button:hover {
+  background-color: $colorWhite;
+}
+.o-button--o-section {
+  width: 250px;
+}
+  .o-button__text {
+    color: $colorWhite;
+    font-family: $fontMain;
+    font-size: $sizeFont3;
+    font-weight: bold;
+    text-align: center;
+    transition: color 0.25s;
+  }
+  .o-button:hover .o-button__text {
+    color: $colorBlack;
+  }
+
+/* logo */
+.o-kopernik-logo {
+  display: flex;
+  align-items: center;
+  height: $sizeVrHeader;
+}
+.o-kopernik-logo--align-center {
+  justify-content: center;
+}
+  .o-kopernik-logo__emblem {
+    margin-right: 10px;
+    height: 40px;
+  }
+  .o-kopernik-logo__title {
+    font-size: 1.25em;
+    font-family: $fontLogo;
+  }
+  @include breakpoint($breakPhoneUp) {
+    .o-kopernik-logo__title {
+      font-size: 1.75em;
+    }
+  }
+
+/* language icons */
+.o-lang-icons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+.o-lang-icons--full-width {
+  width: 100%;
+}
+.o-lang-icons--align-center {
+  justify-content: center;
+}
+  .o-lang-icons__icon {
+    margin: 5px;
+    width: 35px;
+    height: 35px;
+  }
+    .o-lang-icons__img {
+      width: 35px;
+    }

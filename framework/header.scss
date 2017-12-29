@@ -1,0 +1,67 @@
+.c-header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $sizeVrHeader;
+  background-color: $colorWhite;
+  box-shadow: $shadowLite;
+}
+  .c-header__button {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    height: $sizeVrHeader;
+  }
+  .c-header__button:hover {
+    background-color: $colorButtonBackground;
+  }
+    .c-header__img {
+      margin: 0px 15px;
+      height: 25px;
+    }
+    @include breakpoint($breakPhoneUp) {
+      .c-header__img {
+        height: 30px;
+      }
+    }
+    .c-header__text {
+      position: relative;
+      top: 1px;
+      display: none;
+      font-size: 20px;
+    }
+    @include breakpoint($breakTabletUp) {
+      .c-header__text {
+        display: block;
+      }
+    }
+    .c-header__text--margin-right {
+      margin-right: 15px;
+    }
+    .c-header__text--margin-left {
+      margin-left: 15px;
+    }
+
+  .c-header__wrapper-title {
+    display: flex;
+    align-items: center;
+    height: $sizeVrHeader;
+  }
+    .c-header__emblem {
+      margin-right: 10px;
+      height: 40px;
+    }
+    .c-header__title {
+      font-size: 1.25em;
+      font-family: $fontLogo;
+    }
+    @include breakpoint($breakPhoneUp) {
+      .c-header__title {
+        font-size: 1.75em;
+      }
+    }

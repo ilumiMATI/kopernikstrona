@@ -1,0 +1,169 @@
+.c-main {
+  margin-top: $sizeVrHeader;
+}
+  .c-main__wrapper-main {
+    overflow: hidden;
+  }
+    .o-section {
+      width: 100%;
+    }
+    .o-section--main {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 60px 0;
+    }
+    .o-section--articles { background-color: $colorSection1; }
+    .o-section--projects { background-color: $colorSection2; }
+      .o-section__columns {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+        .o-section__column {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+        }
+        @include breakpoint($breakTabletUp) {
+          .o-section__column {
+            width: 50%;
+          }
+        }
+        .o-section__column--1 {
+          align-items: flex-end;
+          padding: 0 20px 30px 20px;
+        }
+        @include breakpoint($breakTabletUp) {
+          .o-section__column--1 {
+            padding: 0 0 0 10%;
+          }
+        }
+        .o-section__column--2 {
+          align-items: flex-start;
+          padding: 30px 20px 0 20px;
+        }
+        @include breakpoint($breakTabletUp) {
+          .o-section__column--2 {
+            padding: 0 10% 0 0;
+          }
+        }
+          .o-section__image {
+            align-self: center;
+            border-radius: 50%;
+            width: 80%;
+          }
+          @include breakpoint($breakPhoneUp) {
+            .o-section__image {
+              width: 50%;
+            }
+          }
+          @include breakpoint($breakTabletUp) {
+            .o-section__image {
+              width: 65%;
+            }
+          }
+          .o-section__title {
+            font-family: $fontTitle;
+            //font-weight: 700;
+            font-size: $sizeFont2;
+            margin: 0 auto 40px auto;
+          }
+          .o-section__title--main {
+            color: $colorWhite;
+            text-align: center;
+          }
+          @include breakpoint($breakDesktopUp) {
+            .o-section__title {
+              font-size: $sizeFont1;
+            }
+          }
+          .o-section__text {
+            align-self: flex-start;
+            margin-bottom: 20px;
+            color: $colorWhite;
+            font-size: $sizeFont4;
+          }
+          @include breakpoint($breakDesktopUp) {
+            .o-section__text {
+              font-size: $sizeFont3;
+            }
+          }
+        .o-section__tiles {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: flex-start;
+          justify-content: space-around; // in case space-evenly doesnt work
+          justify-content: space-evenly;
+          margin: 0 auto;
+          @include width(70);
+        }
+        .o-section__tiles--articles {
+
+        }
+        .o-section__tiles--projects {
+          justify-content: center;
+        }
+          .o-tile {
+            overflow: hidden;
+            display: block;
+            border-radius: 15px;
+            background-color: $colorWhite;
+            box-shadow: $shadowLite;
+          }
+          .o-tile--article {
+            margin-bottom: 30px;
+            width: 80%;
+          }
+          @include breakpoint($breakPhoneUp) {
+            .o-tile--article {
+              width: 30%;
+            }
+          };
+          .o-tile--project {
+            border-radius: 50%;
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+          }
+          @include breakpoint($breakDesktopUp) {
+            .o-tile--project {
+              width: 150px;
+              height: 150px;
+            }
+          }
+            .o-tile__img {
+              width: 100%;
+            }
+            .o-tile__img--project {
+              padding: 10px;
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+            }
+            .o-tile__wrapper-text {
+              padding: 20px;
+            }
+              .o-tile__title {
+                margin-bottom: 5px;
+                font-weight: bold;
+                font-size: $sizeFont3;
+              }
+              .o-tile--article:hover .o-tile__title {
+                text-decoration: underline;
+              }
+              .o-tile__date {
+                color: $colorGrey;
+                font-size: $sizeFont5;
+                img {
+                  position: relative;
+                  top: 2px;
+                  margin-right: 5px;
+                  width: $sizeFont4;
+                }
+              }
+              .o-tile__text {
+                margin-top: 20px;
+              }

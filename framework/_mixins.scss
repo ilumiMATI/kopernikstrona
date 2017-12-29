@@ -1,0 +1,30 @@
+/* width */
+@mixin width($percent) {
+  width: 100%;
+    @include breakpoint($breakDesktopUp) { width: percentage($percent / 100); }
+}
+
+/* breakpoint */
+@mixin breakpoint($size) {
+  @media only screen and (min-width: $size) { @content; }
+}
+
+/* center */
+@mixin center($type, $directions) {
+  @if $type == "ab" { position: absolute; }
+  @else if $type == "rl" { position: relative; }
+
+  @if $directions == "both" {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @else if $directions == "vr" {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @else if $directions == "hr" {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,109 @@
+// ######### ### ######### ######### #########
+// ###       ###      ###  ###       ###
+// ######### ###    ###    ######    #########
+//       ### ###  ###      ###             ###
+// ######### ### ######### ######### #########
+/* sizes */
+  $sizeVrHeader: 55px;
+  $sizeVrBody: calc(100% - #{$sizeVrHeader});
+
+  $sizeFont1: 3em;
+  $sizeFont2: 2em;
+  $sizeFont3: 1.5em;
+  $sizeFont4: 1em;
+  $sizeFont5: 0.750em;
+  $sizeFont6: 0.5em;
+
+/* breakpoints */
+  // see also: breakpoint() mixin
+  $breakPhoneUp: 550px;
+  $breakTabletUp: 780px;
+  $breakDesktopUp: 1000px;
+
+// ######### ######### ###    ######### ######### #########
+// ###       ###   ### ###    ###   ### ###   ### ###
+// ###       ###   ### ###    ###   ### ######### #########
+// ###       ###   ### ###    ###   ### ### ###         ###
+// ######### ######### ###### ######### ###   ### #########
+/* colors */
+  $colorBlack: #000000;
+  $colorGrey: #555555;
+  $colorLightGrey: #e7e7e7;
+  $colorWhite: #ffffff;
+  
+  $colorBackground: #303030;
+  $colorButtonBackground: $colorLightGrey;
+  $colorLink: #3ec4d6;
+  $colorLinkHover: #77d9e7;
+
+  $colorFooter: $colorBackground/*#263a4e*/;
+    $colorCopyright: /*$colorWhite*/#ededed;
+
+  $colorSection1: #76323f;
+  $colorSection2: #517398;
+
+/* shadows */
+  $shadowLite: 0 0 5px rgba(0,0,0,0.25);
+
+  // ######### ######### ###   ### ######### #########
+// ###       ###   ### ####  ###    ###    ###
+// ######    ###   ### #########    ###    #########
+// ###       ###   ### ###  ####    ###          ###
+// ###       ######### ###   ###    ###    #########
+/* fonts */
+    /* font faces */
+    @font-face {
+      font-family: "AvertaDemo";
+      src: url("../fonts/averta_demo.otf");
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "ZonaProBold";
+      src: url("../fonts/zona_pro_bold.otf");
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "ZonaProLight";
+      src: url("../fonts/zona_pro_light.otf");
+      font-style: normal;
+    }
+
+    /* google fonts */
+    @import "https://fonts.googleapis.com/css?family=Forum|Libre+Baskerville|Rubik|Roboto";
+
+  $fontDefault: "Rubik", sans-serif;
+  $fontLogo:    "Forum", cursive;
+  $fontTitle:   "Libre Baskerville", serif;
+  $fontMain:    "Rubik", sans-serif;
+
+// ###   ### ######### ######### ### ######### ###   ###
+// ###   ### ###       ###   ### ###    ###    ###   ###
+// ######### ######    ######### ###    ###    #########
+// ###   ### ###       ###   ### ###    ###    ###   ###
+// ###   ### ######### ###   ### ###### ###    ###   ###
+/* healthcheck - outlining all elements with certain things */
+/* UNCOMMENT IN CASE OF EMERGENCY */
+
+  // BEM - Blocks
+  //  [class] { outline: 5px solid #ff00bf; }
+
+  // BEM - Elements
+  //  [class*="__"] { outline: 5px solid #00ff21; }
+
+  // BEM - Modifiers
+  //  [class*="--"] { outline: 5px solid #0012ff; }
+
+  // NAMESPACE - Objects
+  //  [class^="o-"], [class*=" o-"] { outline: 5px solid #ff8200; }
+
+  // NAMESPACE - Components
+  //  [class^="c-"], [class*=" c-"] { outline: 5px solid #00ffcb; }
+
+  // NAMESPACE - Utility Classes
+  //  [class^="u-"], [class*=" u-"] { outline: 5px solid #00ff38; }
+
+  // NAMESPACE - Responsive Classes
+  //  [class*="@"] { outline: 5px solid #a7af24; }
+
+  // NAMESPACE - Hack Classes
+  //  [class^="_"] { outline: 5px solid #ff50be; }
