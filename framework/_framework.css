@@ -57,7 +57,7 @@ a.a--non-styled:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto;
+  margin: 0 auto;
   width: 150px;
   height: 50px;
   border: 3px solid #ffffff;
@@ -193,7 +193,10 @@ a.a--non-styled:hover {
   width: 100%; }
 
 .o-section--main {
-  padding: 60px 0px; }
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 60px 0; }
 
 .o-section--articles {
   background-color: #76323f; }
@@ -201,9 +204,50 @@ a.a--non-styled:hover {
 .o-section--projects {
   background-color: #517398; }
 
+.o-section__columns {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.o-section__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+
+@media only screen and (min-width: 780px) {
+  .o-section__column {
+    width: 50%; } }
+.o-section__column--1 {
+  align-items: flex-end;
+  padding: 0 20px 30px 20px; }
+
+@media only screen and (min-width: 780px) {
+  .o-section__column--1 {
+    padding: 0 0 0 10%; } }
+.o-section__column--2 {
+  align-items: flex-start;
+  padding: 30px 20px 0 20px; }
+
+@media only screen and (min-width: 780px) {
+  .o-section__column--2 {
+    padding: 0 10% 0 0; } }
+.o-section__image {
+  align-self: center;
+  border-radius: 50%;
+  width: 80%; }
+
+@media only screen and (min-width: 550px) {
+  .o-section__image {
+    width: 50%; } }
+@media only screen and (min-width: 780px) {
+  .o-section__image {
+    width: 65%; } }
 .o-section__title {
   font-family: "Libre Baskerville", serif;
-  font-size: 2em; }
+  font-size: 2em;
+  margin: 0 auto 40px auto; }
 
 .o-section__title--main {
   color: #ffffff;
@@ -212,13 +256,22 @@ a.a--non-styled:hover {
 @media only screen and (min-width: 1000px) {
   .o-section__title {
     font-size: 3em; } }
+.o-section__text {
+  align-self: flex-start;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 1em; }
+
+@media only screen and (min-width: 1000px) {
+  .o-section__text {
+    font-size: 1.5em; } }
 .o-section__tiles {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-around;
   justify-content: space-evenly;
-  margin: 60px auto 0 auto;
+  margin: 0 auto;
   width: 100%; }
   @media only screen and (min-width: 1000px) {
     .o-section__tiles {
@@ -359,7 +412,7 @@ a.a--non-styled:hover {
   font-size: 16px; }
 
 .c-footer__copyright {
-  padding: 10px;
+  padding: 20px;
   width: 100%;
   font-size: 14px;
   text-align: center;
