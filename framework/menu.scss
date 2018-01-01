@@ -1,0 +1,54 @@
+.o-menu {
+  display: flex;
+  align-items: center;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  top: $sizeVrHeader;
+  left: 0;
+  border-top: solid 1px $colorLightGrey;
+  width: 100%;
+  height: calc(100% - #{$sizeVrHeader});
+  background-color: $colorWhite;
+}
+  .o-menu-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  @include breakpoint($breakTabletUp) {
+    .o-menu-content {
+      padding: 20px 10% 40px 10%;
+    }
+  }
+    .o-menu__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      position: relative;
+      margin: 20px 10px 0 10px;
+      width: 40%;
+      background-color: $colorBlack;
+    }
+    @include breakpoint($breakTabletUp) {
+      .o-menu__item {
+        width: 25%;
+      }
+    }
+    .o-menu__item:before {
+      content:"";
+      display: block;
+      padding-top: 100%;
+    }
+      .o-menu__item-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+      }

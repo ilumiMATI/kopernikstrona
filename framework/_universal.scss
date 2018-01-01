@@ -6,6 +6,9 @@ html, body {
   font-family: $fontMain;
   background-color: $colorBackground;
 }
+body {
+  margin-top: $sizeVrHeader;
+}
 
 .u-clear { clear:both; }
 
@@ -40,7 +43,8 @@ a {
 .o-button:hover {
   background-color: $colorWhite;
 }
-.o-button--o-section {
+.o-button--in-section {
+  margin-top: 20px;
   width: 250px;
 }
   .o-button__text {

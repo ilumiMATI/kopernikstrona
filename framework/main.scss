@@ -1,5 +1,5 @@
 .c-main {
-  margin-top: $sizeVrHeader;
+
 }
   .c-main__wrapper-main {
     overflow: hidden;
@@ -81,10 +81,10 @@
             }
           }
           .o-section__text {
-            align-self: flex-start;
-            margin-bottom: 20px;
+            margin: 0 auto 20px auto;
             color: $colorWhite;
             font-size: $sizeFont4;
+            text-align: center;
           }
           @include breakpoint($breakDesktopUp) {
             .o-section__text {
