@@ -21,9 +21,9 @@ Authors: Mikołaj Kaźmierczak and Mateusz Antczak
 
   <body>
     <header class="c-header">
-      <a class="c-header__button a--non-styled" href="#">
-        <img class="c-header__img" src="icons/header/menu.svg" alt="menu.svg">
-        <span class="c-header__text c-header__text--margin-right">Menu</span>
+      <a class="c-header__button js-menu a--non-styled" href="#">
+        <img class="c-header__img js-menu__icon" src="icons/header/menu.svg" alt="menu.svg">
+        <span class="c-header__text c-header__text--margin-right js-menu__text">Menu</span>
       </a>
 
       <a class="o-kopernik-logo a--non-styled" href="index.html">
@@ -31,49 +31,66 @@ Authors: Mikołaj Kaźmierczak and Mateusz Antczak
         <h1 class="o-kopernik-logo__title">III Liceum Kopernik</h1>
       </a>
 
-      <a class="c-header__button a--non-styled" href="#">
-        <span class="c-header__text c-header__text--margin-left">Szybkie</span>
-        <img class="c-header__img" src="icons/header/quick.svg" alt="quick.svg">
+      <a class="c-header__button js-menu--quick a--non-styled" href="#">
+        <span class="c-header__text c-header__text--margin-left js-menu--quick__text">Szybkie</span>
+        <img class="c-header__img js-menu--quick__icon" src="icons/header/quick.svg" alt="quick.svg">
       </a>
       <!-- header scripts -->
         <!-- coming soon -->
     </header>
 
-    <div class="o-menu">
-      <div class="o-menu-content">
-        <a style="background-color: #6cbd3d" class="o-menu__item" href="#">
-          <img class="o-menu__image">
-          <h2 class="o-menu__title">Szkoła</h2>
-        </a>
+      <div class="o-menu">
+        <div class="o-menu-content">
+          <a style="background-color: #6cbd3d" class="o-menu__item js-menu-button a--non-styled" href="#">
+            <img class="o-menu__image" src="icons/menu/university.svg" alt="#">
+            <h2 class="o-menu__title">Szkoła</h2>
+          </a>
+            <!-- <div class="o-sub-menu">
+              <div class="o-sub-menu-content">
+                <a style="background-color: #89d85b" class="o-sub-menu__item a--non-styled" href="#">
+                  <h2 class="o-sub-menu__title">Historia</h2>
+                </a>
+                <a style="background-color: #89d85b" class="o-sub-menu__item a--non-styled" href="#">
+                  <h2 class="o-sub-menu__title">Symbole szkoły</h2>
+                </a>
+                <a style="background-color: #89d85b" class="o-sub-menu__item a--non-styled" href="#">
+                  <h2 class="o-sub-menu__title">Rada pedagogiczna</h2>
+                </a>
+                <a style="background-color: #89d85b" class="o-sub-menu__item a--non-styled" href="#">
+                  <h2 class="o-sub-menu__title">Zasady oceniania</h2>
+                </a>
+              </div>
+            </div> -->
 
-        <a style="background-color: #daec34" class="o-menu__item" href="#">
-          <img class="o-menu__image">
-          <h2 class="o-menu__title">Konkursy</h2>
-        </a>
+          <a style="background-color: #761e88" class="o-menu__item a--non-styled" href="#">
+            <img class="o-menu__image" src="icons/menu/bell.svg" alt="#">
+            <h2 class="o-menu__title">Konkursy</h2>
+          </a>
 
-        <a style="background-color: #4765ca" class="o-menu__item" href="#">
-          <img class="o-menu__image">
-          <h2 class="o-menu__title">Projekty</h2>
-        </a>
+          <a style="background-color: #4765ca" class="o-menu__item a--non-styled" href="#">
+            <img class="o-menu__image" src="icons/menu/school-material.svg" alt="#">
+            <h2 class="o-menu__title">Projekty</h2>
+          </a>
 
-        <a style="background-color: #d65878" class="o-menu__item" href="#">
-          <img class="o-menu__image">
-          <h2 class="o-menu__title">Kandydaci</h2>
-        </a>
+          <a style="background-color: #d65878" class="o-menu__item a--non-styled" href="#">
+            <img class="o-menu__image" src="icons/menu/blackboard.svg" alt="#">
+            <h2 class="o-menu__title">Kandydaci</h2>
+          </a>
 
-        <a style="background-color: #3dd3d3" class="o-menu__item" href="#">
-          <img class="o-menu__image">
-          <h2 class="o-menu__title">Uczniowie</h2>
-        </a>
+          <a style="background-color: #3dd3d3" class="o-menu__item a--non-styled" href="#">
+            <img class="o-menu__image" src="icons/menu/books.svg" alt="#">
+            <h2 class="o-menu__title">Uczniowie</h2>
+          </a>
 
-        <a style="background-color: #c22929" class="o-menu__item" href="#">
-          <img class="o-menu__image">
-          <h2 class="o-menu__title">Absolwenci</h2>
-        </a>
+          <a style="background-color: #c22929" class="o-menu__item a--non-styled" href="#">
+            <img class="o-menu__image" src="icons/menu/student.svg" alt="#">
+            <h2 class="o-menu__title">Absolwenci</h2>
+          </a>
+        </div>
+        <!-- menu scripts -->
+        <script src="scripts_js/center_menu.js"></script>
+        <script src="scripts_js/toggle_menu.js"></script>
       </div>
-      <!-- menu scripts -->
-        <!-- coming soon -->
-    </div>
 
     <main class="c-main">
       <div class="c-main__wrapper-main">
@@ -120,7 +137,7 @@ Authors: Mikołaj Kaźmierczak and Mateusz Antczak
 
             <div class="o-section__column o-section__column--2">
               <h1 class="o-section__title o-section__title--main">Rekrutacja?</h1>
-              <p class="o-section__text">Dowiedz się więcej o naszym procesie rekrutacji i wymaganiach. To nie jest niemożliwe!</p>
+              <p class="o-section__text">Dowiedz się więcej o naszym procesie rekrutacji i wymaganiach. Da się!</p>
 
               <a href="#" class="o-button o-button--in-section a--non-styled">
                 <span class="o-button__text">Pokaż więcej...</span>
@@ -133,8 +150,8 @@ Authors: Mikołaj Kaźmierczak and Mateusz Antczak
           <div class="o-section__columns">
             <div class="o-section__column o-section__column--1">
               <h1 class="o-section__title o-section__title--main">Dlaczego powinieneś wybrać Kopernika?</h1>
-              <p class="o-section__text">Bo jest fajny. Nie wiem co tu napisać, ale to musi być inspirujące.</p>
-              <p class="o-section__text">"Et omnia Amadeus Deus Ex vanitas" Znany Człowiek</p>
+              <p class="o-section__text">Nie mam pojęcia, skontaktuj się z naszym konsultantem. Opowie Ci inspirujące rzeczy.</p>
+              <p class="o-section__text">"Et omnia Amadeus Deus Ex vanitas" Absolwent</p>
 
               <a href="#" class="o-button o-button--in-section a--non-styled">
                 <span class="o-button__text">Czytaj dalej...</span>
@@ -214,7 +231,7 @@ Authors: Mikołaj Kaźmierczak and Mateusz Antczak
       </div>
 
       <!-- main scripts -->
-          <!-- coming soon -->
+        <!-- coming soon -->
     </main>
 
     <footer class="c-footer">
@@ -273,16 +290,16 @@ Authors: Mikołaj Kaźmierczak and Mateusz Antczak
 
             <div class="o-lang-icons o-lang-icons--full-width o-lang-icons--align-center">
               <a class="o-lang-icons__icon a--non-styled" href="#">
-                <img class="o-lang-icons__img" src="icons/english.png" alt="english.png">
+                <img class="o-lang-icons__img" src="icons/lang/english.png" alt="english.png">
               </a>
               <a class="o-lang-icons__icon a--non-styled" href="#">
-                <img class="o-lang-icons__img" src="icons/france.png" alt="france.png">
+                <img class="o-lang-icons__img" src="icons/lang/france.png" alt="france.png">
               </a>
               <a class="o-lang-icons__icon a--non-styled" href="#">
-                <img class="o-lang-icons__img" src="icons/spain.png" alt="spain.png">
+                <img class="o-lang-icons__img" src="icons/lang/spain.png" alt="spain.png">
               </a>
               <a class="o-lang-icons__icon a--non-styled" href="#">
-                <img class="o-lang-icons__img" src="icons/germany.png" alt="germany.png">
+                <img class="o-lang-icons__img" src="icons/lang/germany.png" alt="germany.png">
               </a>
             </div>
           </div>

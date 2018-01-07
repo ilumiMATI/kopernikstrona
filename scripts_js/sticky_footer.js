@@ -1,6 +1,6 @@
 function StickyFooter() {
   // creating variables for storing needed sizes
-  $sizeVrWin = $(window).height();
+  $sizeVrWin    = $(window).height();
   $sizeVrHeader = $("header").height();
   $sizeVrMainWrapper = $("main").height();
   $sizeVrFooter = $("footer").height();
