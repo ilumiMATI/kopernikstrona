@@ -20,7 +20,7 @@
     height: $sizeVrHeader;
   }
   .c-header__button:hover {
-    background-color: $colorButtonBackground;
+    cursor: pointer;
   }
     .c-header__img {
       margin: 0px 15px;

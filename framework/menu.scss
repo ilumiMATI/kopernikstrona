@@ -1,17 +1,19 @@
 .o-menu {
-  visibility: hidden;
   position: fixed;
   overflow-y: auto;
   display: flex;
   align-items: flex-start;
   z-index: 101;
   top: $sizeVrHeader;
-  left: 0;
-  //border-top: solid 1px $colorLightGrey;
+  left: -100%;
+  border-top: solid 1px $colorLightGrey;
   width: 100%;
   height: calc(100% - #{$sizeVrHeader});
-  background-color: rgba(0, 0, 0, 0.75);
-  transition: background-color 0.5s;
+  background-color: $colorWhite/*rgba(0, 0, 0, 0.75)*/;
+  transition: left 0.25s;
+}
+.o-menu--sub {
+  left: 100%;
 }
   .o-menu-content {
     display: flex;

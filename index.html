@@ -17,13 +17,14 @@ Authors: Mikołaj Kaźmierczak and Mateusz Antczak
         <link rel="stylesheet" href="framework/_framework.css">
     <!-- head scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts_js/_variables.js"></script>
   </head>
 
   <body>
     <header class="c-header">
-      <a class="c-header__button js-menu a--non-styled" href="#">
-        <img class="c-header__img js-menu__icon" src="icons/header/menu.svg" alt="menu.svg">
-        <span class="c-header__text c-header__text--margin-right js-menu__text">Menu</span>
+      <a class="c-header__button js-header-menu-button a--non-styled">
+        <img class="c-header__img js-header-menu-button__icon" src="icons/header/menu.svg" alt="menu.svg">
+        <span class="c-header__text c-header__text--margin-right js-header-menu-button__text">Menu</span>
       </a>
 
       <a class="o-kopernik-logo a--non-styled" href="index.html">
@@ -31,66 +32,68 @@ Authors: Mikołaj Kaźmierczak and Mateusz Antczak
         <h1 class="o-kopernik-logo__title">III Liceum Kopernik</h1>
       </a>
 
-      <a class="c-header__button js-menu--quick a--non-styled" href="#">
-        <span class="c-header__text c-header__text--margin-left js-menu--quick__text">Szybkie</span>
-        <img class="c-header__img js-menu--quick__icon" src="icons/header/quick.svg" alt="quick.svg">
+      <a class="c-header__button js-header-menu-button--quick a--non-styled">
+        <span class="c-header__text c-header__text--margin-left js-header-menu-button--quick__text">Szybkie</span>
+        <img class="c-header__img js-header-menu-button--quick__icon" src="icons/header/quick.svg" alt="quick.svg">
       </a>
       <!-- header scripts -->
         <!-- coming soon -->
     </header>
 
-      <div class="o-menu">
-        <div class="o-menu-content">
-          <a style="background-color: #6cbd3d" class="o-menu__item js-menu-button a--non-styled" href="#">
-            <img class="o-menu__image" src="icons/menu/university.svg" alt="#">
-            <h2 class="o-menu__title">Szkoła</h2>
-          </a>
-            <!-- <div class="o-sub-menu">
-              <div class="o-sub-menu-content">
-                <a style="background-color: #89d85b" class="o-sub-menu__item a--non-styled" href="#">
-                  <h2 class="o-sub-menu__title">Historia</h2>
-                </a>
-                <a style="background-color: #89d85b" class="o-sub-menu__item a--non-styled" href="#">
-                  <h2 class="o-sub-menu__title">Symbole szkoły</h2>
-                </a>
-                <a style="background-color: #89d85b" class="o-sub-menu__item a--non-styled" href="#">
-                  <h2 class="o-sub-menu__title">Rada pedagogiczna</h2>
-                </a>
-                <a style="background-color: #89d85b" class="o-sub-menu__item a--non-styled" href="#">
-                  <h2 class="o-sub-menu__title">Zasady oceniania</h2>
-                </a>
-              </div>
-            </div> -->
+    <div class="o-menu js-menu">
+      <div class="o-menu-content">
+        <a style="background-color: #6cbd3d" class="o-menu__item js-menu-button a--non-styled" href="#">
+          <img class="o-menu__image" src="icons/menu/university.svg" alt="#">
+          <h2 class="o-menu__title">Szkoła</h2>
+        </a>
 
-          <a style="background-color: #761e88" class="o-menu__item a--non-styled" href="#">
-            <img class="o-menu__image" src="icons/menu/bell.svg" alt="#">
-            <h2 class="o-menu__title">Konkursy</h2>
-          </a>
+          <div class="o-menu o-menu--sub js-sub-menu">
+            <div class="o-menu-content o-menu-content--sub">
+              <a style="background-color: #89d85b" class="o-menu__item o-menu__item--sub a--non-styled" href="#">
+                <h2 class="o-menu__title o-menu__title--sub">Historia</h2>
+              </a>
+              <a style="background-color: #89d85b" class="o-menu__item o-menu__item--sub  a--non-styled" href="#">
+                <h2 class="o-menu__title o-menu__title--sub">Symbole szkoły</h2>
+              </a>
+              <a style="background-color: #89d85b" class="o-menu__item o-menu__item--sub  a--non-styled" href="#">
+                <h2 class="o-menu__title o-menu__title--sub">Rada pedagogiczna</h2>
+              </a>
+              <a style="background-color: #89d85b" class="o-menu__item o-menu__item--sub  a--non-styled" href="#">
+                <h2 class="o--menu__title o-menu__title--sub">Zasady oceniania</h2>
+              </a>
+            </div>
+          </div>
 
-          <a style="background-color: #4765ca" class="o-menu__item a--non-styled" href="#">
-            <img class="o-menu__image" src="icons/menu/school-material.svg" alt="#">
-            <h2 class="o-menu__title">Projekty</h2>
-          </a>
+        <a style="background-color: #761e88" class="o-menu__item a--non-styled" href="#">
+          <img class="o-menu__image" src="icons/menu/bell.svg" alt="#">
+          <h2 class="o-menu__title">Konkursy</h2>
+        </a>
 
-          <a style="background-color: #d65878" class="o-menu__item a--non-styled" href="#">
-            <img class="o-menu__image" src="icons/menu/blackboard.svg" alt="#">
-            <h2 class="o-menu__title">Kandydaci</h2>
-          </a>
+        <a style="background-color: #4765ca" class="o-menu__item a--non-styled" href="#">
+          <img class="o-menu__image" src="icons/menu/school-material.svg" alt="#">
+          <h2 class="o-menu__title">Projekty</h2>
+        </a>
 
-          <a style="background-color: #3dd3d3" class="o-menu__item a--non-styled" href="#">
-            <img class="o-menu__image" src="icons/menu/books.svg" alt="#">
-            <h2 class="o-menu__title">Uczniowie</h2>
-          </a>
+        <a style="background-color: #d65878" class="o-menu__item a--non-styled" href="#">
+          <img class="o-menu__image" src="icons/menu/blackboard.svg" alt="#">
+          <h2 class="o-menu__title">Kandydaci</h2>
+        </a>
 
-          <a style="background-color: #c22929" class="o-menu__item a--non-styled" href="#">
-            <img class="o-menu__image" src="icons/menu/student.svg" alt="#">
-            <h2 class="o-menu__title">Absolwenci</h2>
-          </a>
-        </div>
-        <!-- menu scripts -->
-        <script src="scripts_js/center_menu.js"></script>
-        <script src="scripts_js/toggle_menu.js"></script>
+        <a style="background-color: #3dd3d3" class="o-menu__item a--non-styled" href="#">
+          <img class="o-menu__image" src="icons/menu/books.svg" alt="#">
+          <h2 class="o-menu__title">Uczniowie</h2>
+        </a>
+
+        <a style="background-color: #c22929" class="o-menu__item a--non-styled" href="#">
+          <img class="o-menu__image" src="icons/menu/student.svg" alt="#">
+          <h2 class="o-menu__title">Absolwenci</h2>
+        </a>
       </div>
+      <!-- menu scripts -->
+      <script src="scripts_js/center_menu.js"></script>
+      <script src="scripts_js/toggle_menu.js"></script>
+      <script src="scripts_js/toggle_sub_menu.js"></script>
+    </div>
 
     <main class="c-main">
       <div class="c-main__wrapper-main">

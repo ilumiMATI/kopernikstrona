@@ -1,24 +1,31 @@
 $(function() {
   // creating variables for storing needed references
+  $refMenu = ".js-menu";
   $refMenuButton = ".js-menu-button";
-  $refSubMenu = ".js-menu-button + .o-sub-menu";
+  $refSubMenu    = ".js-sub-menu";
 
-  // creating a variable that's going to determine if the menu is visible or not
-  $isVisible = false;
+  // creating a variable that's going to determine if the menu is opened or not
+  var isOpened = false;
 
   // toggling menu everytime the menu button is clicked
   $($refMenuButton).click(function() {
-    if($isVisible == false) {
-      $isVisible = true;
+    if(isOpened == false) {
+      isOpened = true;
       // showing the menu
+      $($refMenu).css({
+        "left":"-100%"
+      });
       $($refSubMenu).css({
-        "visibility":"visible"
+        "left":"0px"
       });
     } else {
-      $isVisible = false;
+      isOpened = false;
       // reversing everything
+      $($refMenu).css({
+        "left":"0px"
+      });
       $($refSubMenu).css({
-        "visibility":"hidden"
+        "left":"100%"
       });
     }
   });
