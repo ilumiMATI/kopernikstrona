@@ -38,7 +38,7 @@ a {
   border: 3px solid $colorWhite;
   border-radius: 25px;
   box-shadow: $shadowLite;
-  transition: background-color 0.25s;
+  transition: background-color $tFast;
 }
 .o-button:hover {
   background-color: $colorWhite;
@@ -53,7 +53,7 @@ a {
     font-size: $sizeFont3;
     font-weight: bold;
     text-align: center;
-    transition: color 0.25s;
+    transition: color $tFast;
   }
   .o-button:hover .o-button__text {
     color: $colorBlack;

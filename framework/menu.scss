@@ -2,18 +2,23 @@
   position: fixed;
   overflow-y: auto;
   display: flex;
+  flex-flow: column;
   align-items: flex-start;
-  z-index: 101;
+  justify-content: flex-start;
+  z-index: $zMenu;
   top: $sizeVrHeader;
   left: -100%;
-  border-top: solid 1px $colorLightGrey;
+  //border-top: solid 1px $colorLightGrey;
   width: 100%;
   height: calc(100% - #{$sizeVrHeader});
   background-color: $colorWhite/*rgba(0, 0, 0, 0.75)*/;
-  transition: left 0.25s;
+  transition: top $tNormal, left $tNormal;
 }
 .o-menu--sub {
-  left: 100%;
+  top: calc(-100% + #{$sizeVrHeader});
+  left: 0;
+  height: calc(100% - #{$sizeVrHeader} - #{$sizeVrHeader});
+  //background-color: rgba(0, 0, 0, 0.75);
 }
   .o-menu-content {
     display: flex;
@@ -41,10 +46,24 @@
       height: 130px;
       background-color: $colorBlack;
     }
+    .o-menu__item--sub {
+      flex-direction: row;
+      justify-content: center;
+      margin: 20px 0 0 0;
+      width: 280px;
+      height: 50px;
+    }
+    .o-menu__item--sub:last-child {
+      margin-bottom: 20px;
+    }
     @include breakpoint(600px) {
       .o-menu__item {
         width: 260px;
         height: 260px;
+      }
+      .o-menu__item--sub {
+        width: 540px;
+        height: 50px;
       }
     }
       .o-menu__image {
@@ -57,8 +76,45 @@
         color: $colorWhite;
         font-weight: bold;
       }
+      .o-menu__title--sub {
+        margin-bottom: 0;
+      }
       @include breakpoint(600px) {
         .o-menu__title {
           font-size: $sizeFont3;
         }
+      }
+  .o-menu--sub__bottom-bar {
+    position: fixed;
+    bottom: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    border-top: solid 1px $colorLightGrey;
+    width: 100%;
+    height: $sizeVrHeader;
+    background-color: $colorWhite;
+    transition: bottom $tNormal;
+  }
+    .o-menu--sub__title {
+      display: flex;
+
+    }
+      .o-menu--sub__title-image {
+
+      }
+      .o-menu--sub__title-text {
+        font-size: $sizeFont3;
+      }
+    .o-menu--sub__close {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: $sizeVrHeader;
+      height: 100%;
+    }
+      .o-menu--sub__close-image {
+        width:  25px;
+        height: 25px;
       }

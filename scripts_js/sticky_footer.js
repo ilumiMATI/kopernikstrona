@@ -1,13 +1,7 @@
 function StickyFooter() {
-  // creating variables for storing needed sizes
-  $sizeVrWin    = $(window).height();
-  $sizeVrHeader = $("header").height();
-  $sizeVrMainWrapper = $("main").height();
-  $sizeVrFooter = $("footer").height();
-
   // checking if the header + #main-wrapper + footer is smaller then the window
   // if that happens there there is a blank gap under the footer, we don't want that
-  if(($sizeVrHeader + $sizeVrMainWrapper + $sizeVrFooter) < $sizeVrWin) {
+  if(($sizeVrOuterHeader + $sizeVrMainWrapper + $sizeVrFooter) < $sizeVrWin) {
     // moving footer to the bottom
     $("footer").css({
       "position":"fixed",

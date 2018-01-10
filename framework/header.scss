@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   position: fixed;
-  z-index: 100;
+  z-index: $zHeader;
   top: 0;
   left: 0;
   border-bottom: solid 1px $colorLightGrey;
@@ -16,7 +16,6 @@
     align-self: flex-start;
     display: flex;
     align-items: center;
-    z-index: 1;
     height: $sizeVrHeader;
   }
   .c-header__button:hover {

@@ -1,32 +1,32 @@
+function OpenSubMenu() {
+  // showing the sub menu
+  $($refSubMenu).css({
+    "top":"55px"
+  });
+  // showing the sub menu bottom bar
+  $($refSubMenuBottomBar).css({
+    "bottom":"0px"
+  });
+}
+
+function CloseSubMenu() {
+  // reversing everything
+  $($refSubMenu).css({
+    "top":"calc(-100% + 55px)"
+  });
+  $($refSubMenuBottomBar).css({
+    "bottom":"100%"
+  });
+}
+
 $(function() {
-  // creating variables for storing needed references
-  $refMenu = ".js-menu";
-  $refMenuButton = ".js-menu-button";
-  $refSubMenu    = ".js-sub-menu";
-
-  // creating a variable that's going to determine if the menu is opened or not
-  var isOpened = false;
-
-  // toggling menu everytime the menu button is clicked
+  // opening menu when the menu button is clicked
   $($refMenuButton).click(function() {
-    if(isOpened == false) {
-      isOpened = true;
-      // showing the menu
-      $($refMenu).css({
-        "left":"-100%"
-      });
-      $($refSubMenu).css({
-        "left":"0px"
-      });
-    } else {
-      isOpened = false;
-      // reversing everything
-      $($refMenu).css({
-        "left":"0px"
-      });
-      $($refSubMenu).css({
-        "left":"100%"
-      });
-    }
+    OpenSubMenu();
+  });
+
+  // closing the menu when sub menu close button is clicked
+  $($refSubMenuCloseButton).click(function(){
+    CloseSubMenu();
   });
 });

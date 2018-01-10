@@ -1,20 +1,15 @@
 function CenterMenu() {
-  // creating variables for storing needed sizes
-  $sizeVrWin    = $(window).height();
-  $sizeVrHeader = $("header").height();
-  $sizeVrMenu   = $(".o-menu-content").height();
-
   // checking if the header + .o-menu-content is smaller then the window
   // if that happens there there is a lot ugly white space under the items in the menu, we don't want that
-  if(($sizeVrHeader + $sizeVrMenu) < $sizeVrWin) {
+  if(($sizeVrOuterHeader + $sizeVrMenu) < $sizeVrWin) {
     // centering the items wrapper in the menu
-    $(".o-menu").css({
-      "align-items":"center"
+    $($refMenu).css({
+      "justify-content":"center"
     });
   } else {
     // bringing the items wrapper back to the normal flow
-    $(".o-menu").css({
-      "align-items":"flex-start"
+    $($refMenu).css({
+      "justify-content":"flex-start"
     });
   }
 }
