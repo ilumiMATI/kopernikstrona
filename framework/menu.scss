@@ -1,24 +1,29 @@
 .o-menu {
   position: fixed;
+  z-index: $zMenu;
   overflow-y: auto;
   display: flex;
   flex-flow: column;
   align-items: flex-start;
   justify-content: flex-start;
-  z-index: $zMenu;
   top: $sizeVrHeader;
-  left: -100%;
+  left: 0;
   //border-top: solid 1px $colorLightGrey;
   width: 100%;
   height: calc(100% - #{$sizeVrHeader});
   background-color: $colorWhite/*rgba(0, 0, 0, 0.75)*/;
-  transition: top $tNormal, left $tNormal;
+  transform: translateX(-100%);
+  will-change: transform;
+  transition: transform $tNormal;
 }
 .o-menu--sub {
-  top: calc(-100% + #{$sizeVrHeader});
-  left: 0;
-  height: calc(100% - #{$sizeVrHeader} - #{$sizeVrHeader});
+  top: 0;
+  height: calc(100% - #{$sizeVrHeader});
   //background-color: rgba(0, 0, 0, 0.75);
+  transform: translateY(-100%);
+}
+.o-menu--centered {
+  justify-content: center;
 }
   .o-menu-content {
     display: flex;
@@ -29,11 +34,6 @@
     width: 100%;
     max-width: 860px;
     height: auto;
-  }
-  @include breakpoint($breakTabletUp) {
-    .o-menu-content {
-    
-    }
   }
     .o-menu__item {
       display: flex;
@@ -86,7 +86,8 @@
       }
   .o-menu--sub__bottom-bar {
     position: fixed;
-    bottom: 100%;
+    z-index: $zBottomBars;
+    bottom: 0;
     left: 0;
     display: flex;
     justify-content: space-between;
@@ -95,16 +96,26 @@
     width: 100%;
     height: $sizeVrHeader;
     background-color: $colorWhite;
-    transition: bottom $tNormal;
+    transform: translateY(100%);
+    transition: transform $tFast;
   }
     .o-menu--sub__title {
       display: flex;
-
+      align-items: center;
     }
-      .o-menu--sub__title-image {
-
+      .o-menu--sub__title-img-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: $sizeVrHeader;
+        height: 100%;
       }
+        .o-menu--sub__title-img {
+          width: 40px;
+          height: 40px;
+        }
       .o-menu--sub__title-text {
+        margin-left: 10px;
         font-size: $sizeFont3;
       }
     .o-menu--sub__close {
@@ -114,7 +125,7 @@
       width: $sizeVrHeader;
       height: 100%;
     }
-      .o-menu--sub__close-image {
+      .o-menu--sub__close-img {
         width:  25px;
         height: 25px;
       }

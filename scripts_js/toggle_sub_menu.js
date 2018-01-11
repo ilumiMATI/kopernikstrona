@@ -1,28 +1,32 @@
-function OpenSubMenu() {
+function OpenSubMenu(event) {
+  // getting the references of clicked menu button's sub menu and sub menu's bottom bar
+  var subMenu    = event.delegateTarget.nextSibling.nextSibling;
+  var subMenuBar = subMenu.nextSibling.nextSibling;
+
   // showing the sub menu
-  $($refSubMenu).css({
-    "top":"55px"
+  $(subMenu).css({
+    "transform":"none"
   });
-  // showing the sub menu bottom bar
-  $($refSubMenuBottomBar).css({
-    "bottom":"0px"
+  // showing the sub menus bottom bar
+  $(subMenuBar).css({
+    "transform":"none"
   });
 }
 
 function CloseSubMenu() {
   // reversing everything
   $($refSubMenu).css({
-    "top":"calc(-100% + 55px)"
+    "transform":"translateY(-100%)"
   });
   $($refSubMenuBottomBar).css({
-    "bottom":"100%"
+    "transform":"translateY(100%)"
   });
 }
 
 $(function() {
   // opening menu when the menu button is clicked
-  $($refMenuButton).click(function() {
-    OpenSubMenu();
+  $($refMenuButton).click(function(event) {
+    OpenSubMenu(event);
   });
 
   // closing the menu when sub menu close button is clicked

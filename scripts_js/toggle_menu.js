@@ -10,7 +10,7 @@ function OpenMenu(yOffset) {
   });
   // showing the menu
   $($refMenu).css({
-    "left":"0px"
+    "transform":"none"
   });
 }
 
@@ -24,16 +24,16 @@ function CloseMenu(yOffset) {
     "color":"rgb(0,0,0)"
   });
   $($refMenu).css({
-    "left":"-100%"
+    "transform":"translateX(-100%)"
   });
 }
 
 $(function() {
   // creating a variable for storing the offset from the top of the site
-  var yOffset = { val: 0 }; // // a workaround to be able to pass by reference
+  var yOffset = { val: 0 }; // a workaround to be able to pass by reference
 
   // creating a variable that's going to determine if the menu is opened or not
-  $isMenuOpened = false; // a workaround to be able to pass by reference
+  $isMenuOpened = false;
 
   // everytime the menu button is clicked
   $($refHeaderMenuButton).click(function() {
@@ -47,12 +47,6 @@ $(function() {
     // closing all sub menus
     $($refSubMenu).each(function(){
       CloseSubMenu();
-      /*$(this).css({
-        "top":"calc(-100% + 55px)"
-      });
-      $($refSubMenuBottomBar).css({
-        "bottom":"100%"
-      });*/
     });
 
     // toggling quick menu if it's opened

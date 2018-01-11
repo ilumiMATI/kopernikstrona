@@ -5,24 +5,25 @@ $(function(){
 
   /* sizes */
     // vertical sizes of elements
-    $sizeVrWin    = $(window).height();
+    $sizeVrWin         = $(window).height();
     $sizeVrOuterHeader = $("header").outerHeight();
-    $sizeVrMenu        = $(".o-menu-content").height();
+    $sizeVrOuterMenu   = $(".o-menu-content").outerHeight();
     $sizeVrMainWrapper = $("main").height();
+    $sizeVrFooter      = $("footer").height();
     console.log("Main wrapper size: " + $sizeVrMainWrapper);
-    $sizeVrFooter = $("footer").height();
-    console.log("Footer size: " + $sizeVrFooter);
+    console.log("Footer size: "       + $sizeVrFooter);
+
       // calculating the heights everytime the site is resized
       $(window).on("resize", function() {
-        console.log("----------");
-        $sizeVrWin    = $(window).height();
-        console.log("Window size: " + $sizeVrWin);
+        $sizeVrWin         = $(window).height();
         $sizeVrOuterHeader = $("header").outerHeight();
-        console.log("Header size: " + $sizeVrOuterHeader);
-        $sizeVrMenu        = $(".o-menu-content").height();
-        console.log("Menu size: " + $sizeVrMenu);
+        $sizeVrOuterMenu   = $(".o-menu-content").outerHeight();
         $sizeVrMainWrapper = $("main").height();
-        $sizeVrFooter = $("footer").height();
+        $sizeVrFooter      = $("footer").height();
+        console.log("----------");
+        console.log("Window size: " + $sizeVrWin);
+        console.log("Header size: " + $sizeVrOuterHeader);
+        console.log("Menu size: "   + $sizeVrOuterMenu);
       });
 
   /* references */
