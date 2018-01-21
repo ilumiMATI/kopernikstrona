@@ -59,6 +59,58 @@ a {
     color: $colorBlack;
   }
 
+/* bar */
+.o-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: $sizeVrHeader;
+  background-color: $colorWhite;
+  transform: translateY(-100%);
+  will-change: transform;
+  transition: transform $tFast;
+}
+.o-bar--bottom {
+  top: unset;
+  bottom: 0;
+  border-top: solid 1px $colorLightGrey;
+  transform: translateY(100%);
+}
+  .o-bar__title-wrapper {
+    display: flex;
+    align-items: center;
+  }
+    .o-bar__img-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: $sizeVrHeader;
+      height: 100%;
+    }
+      .o-bar__img {
+        width: 40px;
+        height: 40px;
+      }
+    .o-bar__title {
+      margin-left: 5px;
+      width: 40px;
+      font-size: $sizeFont3;
+    }
+  .o-bar__close-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $sizeVrHeader;
+    height: 100%;
+  }
+    .o-bar__close {
+      width: 25px;
+      height: 25px;
+    }
+
 /* logo */
 .o-kopernik-logo {
   display: flex;

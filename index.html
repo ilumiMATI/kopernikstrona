@@ -23,8 +23,8 @@ Authors: Mikołaj Kaźmierczak and Mateusz Antczak
   <body>
     <header class="c-header">
       <a class="c-header__button js-header-menu-button a--non-styled">
-        <img class="c-header__img js-header-menu-button__icon" src="icons/header/menu.svg" alt="menu.svg">
-        <span class="c-header__text c-header__text--margin-right js-header-menu-button__text">Menu</span>
+        <img class="c-header__img js-header-menu-button-icon" src="icons/header/menu.svg" alt="menu.svg">
+        <span class="c-header__text c-header__text--margin-right js-header-menu-button-text">Menu</span>
       </a>
 
       <a class="o-kopernik-logo a--non-styled" href="index.html">
@@ -32,161 +32,432 @@ Authors: Mikołaj Kaźmierczak and Mateusz Antczak
         <h1 class="o-kopernik-logo__title">III Liceum Kopernik</h1>
       </a>
 
-      <a class="c-header__button js-header-menu-button--quick a--non-styled">
-        <span class="c-header__text c-header__text--margin-left js-header-menu-button--quick__text">Szybkie</span>
-        <img class="c-header__img js-header-menu-button--quick__icon" src="icons/header/quick.svg" alt="quick.svg">
+      <a class="c-header__button js-header-quick-menu-button a--non-styled">
+        <span class="c-header__text c-header__text--margin-left js-header-quick-menu-button-text">Szybkie</span>
+        <img class="c-header__img js-header-quick-menu-button-icon" src="icons/header/quick.svg" alt="quick.svg">
       </a>
       <!-- header scripts -->
         <!-- coming soon -->
     </header>
 
-    <div class="o-menu js-menu">
-      <div class="o-menu-content">
-        <a style="background-color: #6cbd3d" class="o-menu__item js-menu-button a--non-styled" href="#">
-          <img class="o-menu__image" src="icons/menu/university.svg" alt="university.svg">
-          <span class="o-menu__title">Szkoła</span>
-        </a>
-          <div class="o-menu o-menu--sub js-sub-menu">
-            <div class="o-menu-content o-menu-content--sub">
-              <a style="background-color: #6cbd3d" class="o-menu__item o-menu__item--sub a--non-styled" href="#">
-                <span class="o-menu__title o-menu__title--sub">Historia</span>
-              </a>
-              <a style="background-color: #6cbd3d" class="o-menu__item o-menu__item--sub  a--non-styled" href="#">
-                <span class="o-menu__title o-menu__title--sub">Symbole szkoły</span>
-              </a>
-              <a style="background-color: #6cbd3d" class="o-menu__item o-menu__item--sub  a--non-styled" href="#">
-                <span class="o-menu__title o-menu__title--sub">Rada pedagogiczna</span>
-              </a>
-              <a style="background-color: #6cbd3d" class="o-menu__item o-menu__item--sub  a--non-styled" href="#">
-                <span class="o-menu__title o-menu__title--sub">Zasady oceniania</span>
-              </a>
-            </div>
-          </div>
-          <div class="o-menu--sub__bottom-bar js-sub-menu-bottom-bar">
-            <div class="o-menu--sub__title">
-              <div class="o-menu--sub__title-img-wrapper">
-                <img class="o-menu--sub__title-img" src="icons/menu/black/university.svg" alt="university.svg">
-              </div>
-              <span class="o-menu--sub__title-text">Szkoła</span>
-            </div>
-            <div class="o-menu--sub__close">
-              <img class="o-menu--sub__close-img js-sub-menu-close-button" src="icons/header/close_red.svg" alt="close_red.svg">
-            </div>
-          </div>
+    <div class="c-menu js-menu">
+      <div class="c-menu__wrapper js-menu-wrapper">
+        <div class="c-menu__content js-menu-content">
+          <a style="background-color: #6cbd3d" class="c-menu__button a--non-styled js-menu-button">
+            <img class="c-menu__button-image" src="icons/menu/university.svg" alt="">
+            <span class="c-menu__button-title">Szkoła</span>
+          </a>
 
-        <a style="background-color: #761e88" class="o-menu__item js-menu-button a--non-styled" href="#">
-          <img class="o-menu__image" src="icons/menu/bell.svg" alt="#">
-          <span class="o-menu__title">Konkursy</span>
-        </a>
-          <div class="o-menu o-menu--sub js-sub-menu">
-            <div class="o-menu-content o-menu-content--sub">
-              <a style="background-color: #761e88" class="o-menu__item o-menu__item--sub a--non-styled" href="#">
-                <span class="o-menu__title o-menu__title--sub">Fajny konkurs</span>
-              </a>
-              <a style="background-color: #761e88" class="o-menu__item o-menu__item--sub  a--non-styled" href="#">
-                <span class="o-menu__title o-menu__title--sub">Olimpiady</span>
-              </a>
-              <a style="background-color: #761e88" class="o-menu__item o-menu__item--sub  a--non-styled" href="#">
-                <span class="o-menu__title o-menu__title--sub">Dyktanda dla humanistów</span>
-              </a>
-            </div>
-          </div>
-          <div class="o-menu--sub__bottom-bar js-sub-menu-bottom-bar">
-            <div class="o-menu--sub__title">
-              <div class="o-menu--sub__title-img-wrapper">
-                <img class="o-menu--sub__title-img" src="icons/menu/black/bell.svg" alt="bell.svg">
-              </div>
-              <span class="o-menu--sub__title-text">Konkursy</span>
-            </div>
-            <div class="o-menu--sub__close">
-              <img class="o-menu--sub__close-img js-sub-menu-close-button" src="icons/header/close_red.svg" alt="close_red.svg">
-            </div>
-          </div>
+          <a style="background-color: #8a3f99" class="c-menu__button a--non-styled js-menu-button">
+            <img class="c-menu__button-image" src="icons/menu/bell.svg" alt="">
+            <span class="c-menu__button-title">Konkursy</span>
+          </a>
 
-        <a style="background-color: #4765ca" class="o-menu__item js-menu-button a--non-styled" href="#">
-          <img class="o-menu__image" src="icons/menu/school-material.svg" alt="#">
-          <span class="o-menu__title">Projekty</span>
-        </a>
-          <div class="o-menu o-menu--sub js-sub-menu">
-            <div class="o-menu-content o-menu-content--sub">
-              <a style="background-color: #4765ca" class="o-menu__item o-menu__item--sub a--non-styled" href="#">
-                <span class="o-menu__title o-menu__title--sub">Sample text</span>
-              </a>
-              <a style="background-color: #4765ca" class="o-menu__item o-menu__item--sub  a--non-styled" href="#">
-                <span class="o-menu__title o-menu__title--sub">Sample text</span>
-              </a>
-              <a style="background-color: #4765ca" class="o-menu__item o-menu__item--sub  a--non-styled" href="#">
-                <span class="o-menu__title o-menu__title--sub">Sample text</span>
-              </a>
-              <a style="background-color: #4765ca" class="o-menu__item o-menu__item--sub  a--non-styled" href="#">
-                <span class="o-menu__title o-menu__title--sub">Sample text</span>
-              </a>
-              <a style="background-color: #4765ca" class="o-menu__item o-menu__item--sub  a--non-styled" href="#">
-                <span class="o-menu__title o-menu__title--sub">Sample text</span>
-              </a>
-            </div>
-          </div>
-          <div class="o-menu--sub__bottom-bar js-sub-menu-bottom-bar">
-            <div class="o-menu--sub__title">
-              <div class="o-menu--sub__title-img-wrapper">
-                <img class="o-menu--sub__title-img" src="icons/menu/black/school-material.svg" alt="school-material.svg">
-              </div>
-              <span class="o-menu--sub__title-text">Projekty</span>
-            </div>
-            <div class="o-menu--sub__close">
-              <img class="o-menu--sub__close-img js-sub-menu-close-button" src="icons/header/close_red.svg" alt="close_red.svg">
-            </div>
-          </div>
+          <a style="background-color: #4765ca" class="c-menu__button a--non-styled js-menu-button">
+            <img class="c-menu__button-image" src="icons/menu/school-material.svg" alt="">
+            <span class="c-menu__button-title">Projekty</span>
+          </a>
 
-        <a style="background-color: #d65878" class="o-menu__item js-menu-button a--non-styled" href="#">
-          <img class="o-menu__image" src="icons/menu/blackboard.svg" alt="#">
-          <span class="o-menu__title">Kandydaci</span>
-        </a>
-          <div class="o-menu o-menu--sub js-sub-menu">
-            <div class="o-menu-content o-menu-content--sub">
-              <a style="background-color: #d65878" class="o-menu__item o-menu__item--sub a--non-styled" href="#">
-                <span class="o-menu__title o-menu__title--sub">Sample text</span>
-              </a>
-              <a style="background-color: #d65878" class="o-menu__item o-menu__item--sub  a--non-styled" href="#">
-                <span class="o-menu__title o-menu__title--sub">Sample text</span>
-              </a>
-              <a style="background-color: #d65878" class="o-menu__item o-menu__item--sub  a--non-styled" href="#">
-                <span class="o-menu__title o-menu__title--sub">Sample text</span>
-              </a>
-              <a style="background-color: #d65878" class="o-menu__item o-menu__item--sub  a--non-styled" href="#">
-                <span class="o-menu__title o-menu__title--sub">Sample text</span>
-              </a>
-              <a style="background-color: #d65878" class="o-menu__item o-menu__item--sub  a--non-styled" href="#">
-                <span class="o-menu__title o-menu__title--sub">Sample text</span>
-              </a>
-            </div>
-          </div>
-          <div class="o-menu--sub__bottom-bar js-sub-menu-bottom-bar">
-            <div class="o-menu--sub__title">
-              <div class="o-menu--sub__title-img-wrapper">
-                <img class="o-menu--sub__title-img" src="icons/menu/black/blackboard.svg" alt="blackboard.svg">
-              </div>
-              <span class="o-menu--sub__title-text">Kandydaci</span>
-            </div>
-            <div class="o-menu--sub__close">
-              <img class="o-menu--sub__close-img js-sub-menu-close-button" src="icons/header/close_red.svg" alt="close_red.svg">
-            </div>
-          </div>
+          <a style="background-color: #d65878" class="c-menu__button a--non-styled js-menu-button">
+            <img class="c-menu__button-image" src="icons/menu/blackboard.svg" alt="">
+            <span class="c-menu__button-title">Kandydaci</span>
+          </a>
 
-        <a style="background-color: #3dd3d3" class="o-menu__item js-menu-button a--non-styled" href="#">
-          <img class="o-menu__image" src="icons/menu/books.svg" alt="#">
-          <span class="o-menu__title">Uczniowie</span>
-        </a>
+          <a style="background-color: #3dd3d3" class="c-menu__button a--non-styled js-menu-button">
+            <img class="c-menu__button-image" src="icons/menu/books.svg" alt="">
+            <span class="c-menu__button-title">Uczniowie</span>
+          </a>
 
-        <a style="background-color: #c22929" class="o-menu__item js-menu-button a--non-styled" href="#">
-          <img class="o-menu__image" src="icons/menu/student.svg" alt="#">
-          <span class="o-menu__title">Absolwenci</span>
-        </a>
+          <a style="background-color: #c22929" class="c-menu__button a--non-styled js-menu-button">
+            <img class="c-menu__button-image" src="icons/menu/student.svg" alt="">
+            <span class="c-menu__button-title">Absolwenci</span>
+          </a>
+        </div>
       </div>
+
+      <div class="c-menu__wrapper c-menu__wrapper--sub js-sub-menu">
+        <div class="c-menu__content js-sub-menu-content">
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+        </div>
+      </div>
+      <div class="o-bar o-bar--bottom js-sub-menu-bar">
+        <div class="o-bar__title-wrapper">
+          <div class="o-bar__img-wrapper">
+            <img class="o-bar__img" src="" alt="">
+          </div>
+          <span class="o-bar__title"></span>
+        </div>
+        <div class="o-bar__close-wrapper js-sub-menu-close-button">
+          <img class="o-bar__close" src="icons/header/close_red.svg" alt="close_red.svg">
+        </div>
+      </div>
+
+      <div class="c-menu__wrapper c-menu__wrapper--sub js-sub-menu">
+        <div class="c-menu__content js-sub-menu-content">
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+        </div>
+      </div>
+      <div class="o-bar o-bar--bottom js-sub-menu-bar">
+        <div class="o-bar__title-wrapper">
+          <div class="o-bar__img-wrapper">
+            <img class="o-bar__img" src="" alt="">
+          </div>
+          <span class="o-bar__title"></span>
+        </div>
+        <div class="o-bar__close-wrapper js-sub-menu-close-button">
+          <img class="o-bar__close" src="icons/header/close_red.svg" alt="close_red.svg">
+        </div>
+      </div>
+
+      <div class="c-menu__wrapper c-menu__wrapper--sub js-sub-menu">
+        <div class="c-menu__content js-sub-menu-content">
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+        </div>
+      </div>
+      <div class="o-bar o-bar--bottom js-sub-menu-bar">
+        <div class="o-bar__title-wrapper">
+          <div class="o-bar__img-wrapper">
+            <img class="o-bar__img" src="" alt="">
+          </div>
+          <span class="o-bar__title"></span>
+        </div>
+        <div class="o-bar__close-wrapper js-sub-menu-close-button">
+          <img class="o-bar__close" src="icons/header/close_red.svg" alt="close_red.svg">
+        </div>
+      </div>
+
+      <div class="c-menu__wrapper c-menu__wrapper--sub js-sub-menu">
+        <div class="c-menu__content js-sub-menu-content">
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+        </div>
+      </div>
+      <div class="o-bar o-bar--bottom js-sub-menu-bar">
+        <div class="o-bar__title-wrapper">
+          <div class="o-bar__img-wrapper">
+            <img class="o-bar__img" src="" alt="">
+          </div>
+          <span class="o-bar__title"></span>
+        </div>
+        <div class="o-bar__close-wrapper js-sub-menu-close-button">
+          <img class="o-bar__close" src="icons/header/close_red.svg" alt="close_red.svg">
+        </div>
+      </div>
+
+      <div class="c-menu__wrapper c-menu__wrapper--sub js-sub-menu">
+        <div class="c-menu__content js-sub-menu-content">
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+        </div>
+      </div>
+      <div class="o-bar o-bar--bottom js-sub-menu-bar">
+        <div class="o-bar__title-wrapper">
+          <div class="o-bar__img-wrapper">
+            <img class="o-bar__img" src="" alt="">
+          </div>
+          <span class="o-bar__title"></span>
+        </div>
+        <div class="o-bar__close-wrapper js-sub-menu-close-button">
+          <img class="o-bar__close" src="icons/header/close_red.svg" alt="close_red.svg">
+        </div>
+      </div>
+
+      <div class="c-menu__wrapper c-menu__wrapper--sub js-sub-menu">
+        <div class="c-menu__content js-sub-menu-content">
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+        </div>
+      </div>
+      <div class="o-bar o-bar--bottom js-sub-menu-bar">
+        <div class="o-bar__title-wrapper">
+          <div class="o-bar__img-wrapper">
+            <img class="o-bar__img" src="" alt="">
+          </div>
+          <span class="o-bar__title"></span>
+        </div>
+        <div class="o-bar__close-wrapper js-sub-menu-close-button">
+          <img class="o-bar__close" src="icons/header/close_red.svg" alt="close_red.svg">
+        </div>
+      </div>
+
       <!-- menu scripts -->
-      <script src="scripts_js/center_menu.js"></script>
       <script src="scripts_js/toggle_menu.js"></script>
+      <script src="scripts_js/init_sub_menu.js"></script>
       <script src="scripts_js/toggle_sub_menu.js"></script>
+    </div>
+
+    <div class="c-menu c-menu--quick js-quick-menu">
+      <div class="c-menu__wrapper js-menu-wrapper">
+        <div class="c-menu__content js-menu-content">
+          <a style="background-color: #6cbd3d" class="c-menu__button a--non-styled js-menu-button">
+            <img class="c-menu__button-image" src="icons/menu/mortarboard.svg" alt="">
+            <span class="c-menu__button-title">Szczęśliwe numerki</span>
+          </a>
+
+          <a style="background-color: #8a3f99" class="c-menu__button a--non-styled js-menu-button">
+            <img class="c-menu__button-image" src="icons/menu/exam.svg" alt="">
+            <span class="c-menu__button-title">Zastępstwa</span>
+          </a>
+
+          <a style="background-color: #4765ca" class="c-menu__button a--non-styled js-menu-button">
+            <img class="c-menu__button-image" src="icons/menu/newspaper.svg" alt="">
+            <span class="c-menu__button-title">Artykuły</span>
+          </a>
+
+          <a style="background-color: #d65878" class="c-menu__button a--non-styled js-menu-button">
+            <img class="c-menu__button-image" src="icons/menu/Calendar.svg" alt="">
+            <span class="c-menu__button-title">Ważne terminy</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="c-menu__wrapper c-menu__wrapper--sub js-sub-menu">
+        <div class="c-menu__content js-sub-menu-content">
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+        </div>
+      </div>
+      <div class="o-bar o-bar--bottom js-sub-menu-bar">
+        <div class="o-bar__title-wrapper">
+          <div class="o-bar__img-wrapper">
+            <img class="o-bar__img" src="" alt="">
+          </div>
+          <span class="o-bar__title"></span>
+        </div>
+        <div class="o-bar__close-wrapper js-sub-menu-close-button">
+          <img class="o-bar__close" src="icons/header/close_red.svg" alt="close_red.svg">
+        </div>
+      </div>
+
+      <div class="c-menu__wrapper c-menu__wrapper--sub js-sub-menu">
+        <div class="c-menu__content js-sub-menu-content">
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+        </div>
+      </div>
+      <div class="o-bar o-bar--bottom js-sub-menu-bar">
+        <div class="o-bar__title-wrapper">
+          <div class="o-bar__img-wrapper">
+            <img class="o-bar__img" src="" alt="">
+          </div>
+          <span class="o-bar__title"></span>
+        </div>
+        <div class="o-bar__close-wrapper js-sub-menu-close-button">
+          <img class="o-bar__close" src="icons/header/close_red.svg" alt="close_red.svg">
+        </div>
+      </div>
+
+      <div class="c-menu__wrapper c-menu__wrapper--sub js-sub-menu">
+        <div class="c-menu__content js-sub-menu-content">
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+        </div>
+      </div>
+      <div class="o-bar o-bar--bottom js-sub-menu-bar">
+        <div class="o-bar__title-wrapper">
+          <div class="o-bar__img-wrapper">
+            <img class="o-bar__img" src="" alt="">
+          </div>
+          <span class="o-bar__title"></span>
+        </div>
+        <div class="o-bar__close-wrapper js-sub-menu-close-button">
+          <img class="o-bar__close" src="icons/header/close_red.svg" alt="close_red.svg">
+        </div>
+      </div>
+
+      <div class="c-menu__wrapper c-menu__wrapper--sub js-sub-menu">
+        <div class="c-menu__content js-sub-menu-content">
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+
+          <a class="c-menu__button c-menu__button--sub a--non-styled js-sub-menu-button">
+            <span class="c-menu__button-title c-menu__button-title--sub">Sample text</span>
+          </a>
+        </div>
+      </div>
+      <div class="o-bar o-bar--bottom js-sub-menu-bar">
+        <div class="o-bar__title-wrapper">
+          <div class="o-bar__img-wrapper">
+            <img class="o-bar__img" src="" alt="">
+          </div>
+          <span class="o-bar__title"></span>
+        </div>
+        <div class="o-bar__close-wrapper js-sub-menu-close-button">
+          <img class="o-bar__close" src="icons/header/close_red.svg" alt="close_red.svg">
+        </div>
+      </div>
+
+      <!-- menu scripts -->
+      <!-- all the scripts from c-menu applay here -->
     </div>
 
     <main class="c-main">

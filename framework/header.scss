@@ -24,6 +24,8 @@
     .c-header__img {
       margin: 0px 15px;
       height: 25px;
+      transition: transform $tFast;
+      will-change: transform;
     }
     @include breakpoint($breakPhoneUp) {
       .c-header__img {
