@@ -10,7 +10,14 @@
   transition: transform $tNormal cubic-bezier(0,1,0,1);
 }
 .c-menu--quick {
+  left: unset;
+  right: 0;
   transform: translateX(100%);
+}
+@include breakpoint($breakTabletUp) {
+  .c-menu {
+    width: 300px;
+  }
 }
   .c-menu__wrapper {
     overflow-y: auto;

@@ -254,8 +254,13 @@ a.a--non-styled:hover {
   transition: transform 0.5s cubic-bezier(0, 1, 0, 1); }
 
 .c-menu--quick {
+  left: unset;
+  right: 0;
   transform: translateX(100%); }
 
+@media only screen and (min-width: 780px) {
+  .c-menu {
+    width: 300px; } }
 .c-menu__wrapper {
   overflow-y: auto;
   display: flex;
@@ -322,6 +327,12 @@ a.a--non-styled:hover {
 
 .o-section--articles {
   background-color: #76323f; }
+
+.o-section--recrutation {
+  background-color: #303030; }
+
+.o-section--why-kopernik {
+  background-color: #3cb448; }
 
 .o-section--projects {
   background-color: #517398; }

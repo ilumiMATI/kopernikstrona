@@ -17,6 +17,15 @@ function OpenMenu(yOffset, menu = $refMenu) {
     $($refMenu).css({
       "transform":"none"
     });
+
+    // TODO: maybe this script for random opening animation each time could be used in some way, if made a little bit better xD
+    // var number1 = Math.random();
+    // var number2 = Math.random();
+    // var number3 = Math.random();
+    // var number4 = Math.random();
+    // $(".c-menu").css({
+    //   "transition":"transform 0.5s cubic-bezier("+number1+","+number2+","+number3+","+number4+")"
+    // });
   } else {
     $isQuickMenuOpened = true;
 

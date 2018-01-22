@@ -48,8 +48,10 @@
   $colorFooter: $colorBackground/*#263a4e*/;
     $colorCopyright: /*$colorWhite*/#ededed;
 
-  $colorSection1: #76323f;
+  $colorSection1: #76323f/*#e6a822*/;
   $colorSection2: #517398;
+  $colorSection3: $colorBackground;
+  $colorSection4: #3cb448;
 
 /* shadows */
   $shadowLite: 0 0 5px rgba(0,0,0,0.25);
